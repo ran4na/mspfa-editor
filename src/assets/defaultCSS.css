@@ -1,0 +1,105 @@
+  body {
+    background-color: #363636;
+  }
+  .page-preview {
+    margin: 0 auto;
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    max-width: 100%;
+    background-color: #363636;
+  }
+
+  #main {
+    margin: 0 auto;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    min-height: 100vh;
+    height: fit-content;
+    background-color: #c6c6c6;
+    max-width: 950px;
+    width: 100%;
+  }
+
+  #container {
+    margin: 0 auto;
+    max-width: 950px;
+    width: 100%;
+    box-sizing: border-box;
+    --fucking-margin-width: calc((100cqw - 650px) / 2);
+  }
+
+  #slide {
+    margin: 0 auto;
+    background-color: #eeeeee;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    box-sizing: border-box;
+    max-width: 650px;
+    width: 100vw;
+    min-height: fit-content;
+  }
+
+  #comic-next {
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: left;
+    padding: 1em;
+  }
+
+  .next-link::before {
+    content: ">";
+  }
+
+#comic-content > span {
+  padding: 4em;
+  max-width: 100%;
+}
+#comic-content > span > :is(img, iframe) {
+  margin-bottom: 1em;
+  margin-left: -4em;
+  width: 100vw;
+  max-width: fit-content;
+}
+.spoiler {
+  border: 1px dashed gray;
+  margin: 1em;
+
+  button:empty {
+    display: none;
+  }
+}
+.spoiler-content, .spoiler > div {
+  text-align: left;
+  padding: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.spoiler-content:first-child:is(br),
+.spoiler > div:first-child:is(br) {
+  display: none;
+}
+.spoiler img {
+  max-width: 100%;
+}
+#comic-content .imgpop {
+  text-align: center;
+  width: 950px;
+  margin-left: -150px;
+}
+#comic-content .imgpop img {
+  margin: 0 auto !important;
+}
+@media (max-width: calc(650px + 292px)) {
+  #slide {
+    width: 100%;
+  }
+
+  #comic-content > span > img {
+    max-width: 100%;
+  }
+}

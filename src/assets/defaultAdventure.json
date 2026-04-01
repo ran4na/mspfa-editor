@@ -1,0 +1,707 @@
+{
+  "i": 65275,
+  "d": 1759188528368,
+  "u": 1773685169407,
+  "c": "103240179274888463489",
+  "e": ["103240179274888463489"],
+  "n": "DEMON VAMPIRES FROM OUTER SPACE",
+  "r": "Homestuck is real.\n\nCHeck it out! A discord server that i totally didnt use for other comics:\n<a href=\"https://discord.gg/x32XnkbMJ5\">https://discord.gg/x32XnkbMJ5</a>\n<a href=\"https://dvfos.tumblr.com/\">DVFOS Tumblr</a>\n<a href=\"https://www.fruityrumpus.com/project/DVFOS\">DVFOS is also on FRAF!</a>",
+  "h": 2,
+  "t": ["aliens"],
+  "a": "ghostopal",
+  "w": "",
+  "o": "https://file.garden/Yt9c8OgHkWVkfQq2/aliens/dvfos_logo_raster.jpg",
+  "q": "",
+  "x": "https://file.garden/Yt9c8OgHkWVkfQq2/aliens/banner.png",
+  "b": 1,
+  "y": "@import url(\"/css/?s=41577\");\n\nbody {\n\tbackground-color: #000000;\n\tcolor: #ffffff;\n}\n#main {\n\tbackground-color: #100e12;\n\tbackground: linear-gradient(black, #250043);\n        background-attachment: fixed;\n}\n#slide, #log {\n\tbackground-color: #261e28;\n        background: linear-gradient(#1b0d1f, #631a75, #230a29);\n        background-attachment: fixed;\n        border-color: transparent;\n}\n\n#log td, #log tr {\n        border-color: transparent !important;\n}\na {\n\tcolor: #48cad9;\n        font-family: \"Garamond\", \"Georgia\", \"Times New Roman\", serif;\n}\na:visited {\n\tcolor: #ab7bff;\n}\na:active {\n\tcolor: #a5e3f5;\n}\nnav a {\n\tcolor: #ff7efd !important;\n        font-family: \"Courier New\", Courier, monospace;\n        font-weight: bold;\n        font-size: 11px;\n}\n\nnav a:hover {\n        color: pink !important;\n}\n\nheader .mspfalogo {\n\tbackground-color: #000000;\n\tborder-color: #000000;\n\tbackground-image: url(\"https://file.garden/Yt9c8OgHkWVkfQq2/aliens/DVOSLOGO.svg\");\n}\nfooter .mspfalogo {\n\tborder-color: #000000;\n\tbackground-color: #000000;\n\tbackground-image: url(\"https://file.garden/Yt9c8OgHkWVkfQq2/aliens/DVOSLOGO.svg\");\n}\n#info > span > .spoiler.open {\n\tbackground-color: #121212;\n}\ndiv.heart {\n\tbackground-image: url(\"https://file.garden/Yt9c8OgHkWVkfQq2/aliens/DVOSLOGO.svg\");\n}\n/* i like serif fonts */\n#command {\n     font-family: \"Garamond\", \"Georgia\", \"Times New Roman\", serif;\n     font-weight: normal;\n}\n\n#content {\n     font-weight: normal;\n     font-family: \"Garamond\", \"Georgia\", \"Times New Roman\", serif;\n}\n\n.spoiler {\n     font-family: \"Courier New\", Courier, monospace;\n     font-weight: bold;\n     border: 1px solid #7b3ede;\n     border-image: linear-gradient(45deg, rgba(159, 117, 255, 0.7), transparent, rgba(159, 117, 255, 0.9)) 1;\n     background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), transparent);\n     box-shadow: 0px 0px 30px rgba(159, 117, 255, 0.3) inset;\n}\n\n.spoiler a {\n     font-family: \"Courier New\", Courier, monospace;\n     font-weight: bold;\n}\n\nbutton:not(.major), input[type=\"button\"]:not(.major) {\n\tbackground: linear-gradient(#22123a, #470082);\n\tcolor: #cccdff;\n\tborder: 1px solid #8a45ee;\n\tfont-family: \"Courier New\", Courier, monospace;\n\tfont-weight: bold;\n\tpadding-left: 6px;\n\tpadding-right: 6px;\n}\n\nbutton:not(.major):hover, input[type=\"button\"]:not(.major):hover {\n\tbackground: linear-gradient(#271245, #7700da);\n\tcolor: #f1f2ff;\n\tborder: 1px solid #8f65ff;\n}\n\n\nbutton:not(.major):active, input[type=\"button\"]:not(.major):active {\n\tbackground: linear-gradient(#7700da, #271245);\n\tcolor: #f1f2ff;\n\tborder: 1px solid #8a45ee;\n\tfont-family: \"Courier New\", Courier, monospace;\n\tfont-weight: bold;\n\tfont-color: purple;\n\tpadding-left: 6px;\n\tpadding-right: 6px;\n        transform: translateY(1px);\n}\n\n#links {\n        background-color: black;\n        background: linear-gradient(4deg, black, #272727 20%, black);\n        font-family: \"Courier New\", Courier, monospace;\n\tfont-weight: bold;\n        font-size: 1.2rem;\n        padding: 5px;\n        box-shadow: 0px 0px 5px black inset;\n}\n\n#links a {\n\tfont-family: \"Courier New\", Courier, monospace;\n\tfont-weight: bold;\n\ttext-decoration: none;\n\tcolor: #ef7bff;\n\ttext-shadow: 0px 0px 8px #ef7bff82, 0px 0px 5px #e000ff75;\n}\n\n#links a:hover {\n\tcolor: #beff7e;\n\ttext-shadow: 0px 0px 25px #c1ff5299, 0px 0px 5px #80ff00c4;\n}\n\n#links:empty::before {\n\tcontent: \"To be continued...\";\n\tcolor: #474747;\n\ttext-shadow: 0px 2px 10px black;\n}\n\n#dialog {\n        color: black;\n}\nhealthy {\n\tcolor: #0391ff;\n\ttext-shadow: 0px 0px 15px #0391ff, 0px 0px 20px #0391ff;\n}\n\nunhealthy {\n\tcolor: #ff0101;\n\ttext-shadow: 0px 0px 10px #ff0101, 0px 0px 20px #ff0101;\n}\n\nneutral {\n         color: #f6d32d;\n         text-shadow: 0px 0px 10px #f6d32d;\n}",
+  "j": "\n\nasync function warning(title, message, id) {\n      let viewed = await cookieStore.get(`viewed_${id}`).then((c) => c ? c.value : \"false\");\n      if(viewed === \"true\") {\n            return;\n      }\n\n      const msg_element = document.createElement(\"span\");\n      msg_element.innerText = message;\n      MSPFA.dialog(title, msg_element, [\"Okay\"]);\n      await cookieStore.set({\n            name: `viewed_${id}`, \n            value: true,\n            maxAge: 24 * 60 * 60 * 365\n      });\n}\n\nwarning(\"Warning\", \"This comic is a work of fiction. It depicts and discusses sensitive and suggestive topics, and the content in it is not inherently indicative of the author's beliefs. Think of it as MPAA R rated. Viewer Discretion is advised!\", 1);",
+  "v": "\n\nasync function warning(title, message, id) {\n      let viewed = await cookieStore.get(`viewed_${id}`).then((c) => c ? c.value : \"false\");\n      if(viewed === \"true\") {\n            return;\n      }\n\n      const msg_element = document.createElement(\"span\");\n      msg_element.innerText = message;\n      MSPFA.dialog(title, msg_element, [\"Okay\"]);\n      await cookieStore.set({\n            name: `viewed_${id}`, \n            value: true,\n            maxAge: 24 * 60 * 60 * 365\n      });\n}\n\nwarning(\"Warning\", \"This comic is a work of fiction. It depicts and discusses sensitive and suggestive topics, and the content in it is not inherently indicative of the author's beliefs. Think of it as MPAA R rated. Viewer Discretion is advised!\", 1);",
+  "m": "☠⟹",
+  "p": [
+    {
+      "d": 1759189195690,
+      "c": "START",
+      "b": "[alt=The earth floating in space][img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0001.gif[/img][/alt]\n\nEARTH - 2 THOUSAND X'TY X",
+      "n": [2]
+    },
+    {
+      "d": 1759189195690,
+      "c": "A foreign object hurtles towards Earth...",
+      "b": "[alt=A flaming object hurtles towards the earth][img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0002.gif[/img][/alt]",
+      "n": [3]
+    },
+    {
+      "d": 1759189195690,
+      "c": "MEANWHILE... On the surface:",
+      "b": "[alt=A view of the suburbs, it's raining outside. One house in particular lies in the focal point.][img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0003.gif[/img][/alt]\n\nTACOMA, WASHINGTON STATE, UNITED STATES OF AMERICA",
+      "n": [4]
+    },
+    {
+      "d": 1759189195690,
+      "c": "☠⟹",
+      "b": "[alt=A person with long black hair types at his computer in the dark...][img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0004.gif[/img][/alt]\n\nA WEIRD emo boy types away at his computer... what's his name?",
+      "n": [5]
+    },
+    {
+      "d": 1759189195690,
+      "c": "☠⟹",
+      "b": "[alt=The aforementioned person points at himself in confusion.][img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0005.gif[/img][/alt]\n\nYes, you, WEIRD one.\n\nWhat is your name?",
+      "n": [6]
+    },
+    {
+      "d": 1759191458514,
+      "c": "HIS NAME IS:",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0006.gif[/img]\n\nYour name is [size=18]VINCENT RAVEN[/size]\n\nVINCENT here is a COLLEGE STUDENT of 20 YEARS OLD! He currently still lives in his parents house in the Tacoma suburbs. They have like... hobbies and interests. I could list them all here...\nOR we could check his [size=16]CARRD[/size]!\n\nLet's see here:\n\nPedigreeNights | he/they | 20yo\n~~~~~~~~~~~~~~~~~~~~~~~~\n[u]Interests:[/u]\nEmo stuff\nAnime\nArt\nVideo Editing\n~~~~~~~~~~~~~~~~~~~~~~~~\n[u]DNI:[/u]\n[u]Basic DNI Criteria![/u]\nTwilight Fans\n~~~~~~~~~~~~~~~~~~~~~~~~\n\nWow! What an interesting window into Vince's preferences/aversions!\n\nUnfortunately this glossed over a lot so lets dive into each one in detail:\n\n[u]Emo stuff:[/u] Despite it being 2025, Vince has a strong affinity for the general *aesthetics* of emo subculture and finds the whole thing enamoring. They got into it as a kid and have been obsessed with it since. He spends a lot of time researching emo subculture and trying to live it as real as possible. Though, he insists that he's not \"one of those subcultural stuck-ups\".\n\n[u]Anime:[/u] This mostly ties to the Emo stuff. Vince's favorite anime is VAMPIRE HUNTER D, along with some other bulllshittt like ghost in the shell angels egg utena blah blah blah akame ga kill elfen lied ok you get the gist of it.\n\n[u]Art:[/u] Vince likes drawing sometimes. Nothing special here. No he doesn't post it online.\n\n[u]Video editing:[/u] Capcut.\n\nAlso he CONVENIENTLY left out his hobby of [u][size=21]CROSSDRESSING[/size][/u] from his Carrd I wonder why hahahahahaha yes Vince likes crossdressing as a hobby because he thinks its CUTE and silly and provides a funny gap moe or wahtever the more words i spend talking about this the more you'll hate this comic lol he takes selfies and shit but he only shares it with people privately and he is fully secure in his masculinity probably.\n\nYou might be wondering what you're looking at above. That's Vince's DEADJOURNAL profile, he was just making it. It's like a gayer version of LiveJournal. [url=https://pedigreenights.deadjournal.com/]Check it out here![/url]\n\n\nWhat?",
+      "n": [7]
+    },
+    {
+      "d": 1759191458514,
+      "c": "STOP STOP TALKING ABOUT SECRET CROSSDRESSING HOBBY AT ONCE",
+      "b": "fine. Have a room establishing shot panel thing:\n\n[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0007.gif[/img]\n\nOh yeah I forgot he's also a MY LITTLE PONY FAN LOL. Anyways have a look around this room. What do you want them to do?\n\nDid I mention it's 2025",
+      "n": [8]
+    },
+    {
+      "d": 1759193404197,
+      "c": "Vince: Fondly regard Pony Figurine.",
+      "b": "[alt=Vince facepalming][img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0008.gif[/img][/alt]\n\nYou would like to... but you just remembered you have SCHOOL in a few minutes! Damn.",
+      "n": [9]
+    },
+    {
+      "d": 1759193404197,
+      "c": "Explosion outside Vince's house: Explode.",
+      "b": "[alt=An explosion overetakes the screen.][img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0009.gif[/img][/alt]\n\n[size=17]AAGHH!![/size]",
+      "n": [10]
+    },
+    {
+      "d": 1759993816328,
+      "c": "Weird dumb long hair person: Look out the window",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0010.gif[/img]\n\nThat's a freaking smoke from explosion! Damn!",
+      "n": [11]
+    },
+    {
+      "d": 1759993816328,
+      "c": "Camera: Pan out from stupid window boy",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0011.gif[/img]\n\nWAIT WAIT STOP",
+      "n": [12]
+    },
+    {
+      "d": 1759993816328,
+      "c": "Keep  zooming out",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0012.gif[/img]\n\nNOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOooh wait whats up with that fire?",
+      "n": [13]
+    },
+    {
+      "d": 1759993816328,
+      "c": "Panel 13: Zoom into the fire",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0013.gif[/img]\n\nThere's something in the fire... something interesting and awesome.",
+      "n": [14]
+    },
+    {
+      "d": 1759993816328,
+      "c": "BE INTERESTING AWESOME GIRL INSIDE FIRE",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0014.gif[/img]\n\nShe's too interesting and awesome for you to be her. Sorry.\n\nYou are now VIEWING a TROLL GIRL who's a lot more interesting and awesome than the baby nerd from earlier—She's so interesting that you might as well delve into this great and auraful girl's CHARACTER BIOGRAPHY THING RIGHT NOW instead of in the next page.\n\nHer special interest is NETWORKING and TEAM-BUILDING. Scared yet? This girl is a new intern and rising star in the CONQUERING PLANETS FOR THE COMB industry, which is very competitive at this moment. ALL the Troll Ivy league graduates are locked into this field, so she's glad she managed to snag a cushy opportunity in which she has been tasked with kickstarting the Planet Earth 3248's ABSOLUTE SUBJUGATION.\n\nShe thinks you may be wondering why your dear planet Earth was just numbered like a Troll Happy Teriyaki establishment. Some multiverse timeline shit perhaps? WRONG! Naming your planet after the concept of \"ground\" is just not original! Sorry :) \n\nAnyways, her main social media is TROLL LINKEDIN! She loves using TROLL LINKEDIN as her primary social networking service! Hahaha is this girl weird or what. Seriously this is the weirdest person you've seen in your life but that's fine at least she's beautiful and interesting and a go-getter.\n\n\nOh yeah, what's her name? You get one guess.",
+      "n": [15]
+    },
+    {
+      "d": 1762405172582,
+      "c": "Name this girl immediately!!!",
+      "b": "HERNAMEISTRIXIEDIPS-OH my god.\n\n[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0015.gif[/img]\n\nShe's just like, already doing things haha thats cool whatever. Took a whole month to start doing panels again and shes just already doing things ok.",
+      "n": [16]
+    },
+    {
+      "d": 1762405172582,
+      "c": "Trixie: Check Troll IPAD",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0016.gif[/img]\n\nShe has a troll ipad! You know this was originally supposed to be a joke but whatever.\n\nYeah just use your stupid ipad.... sigh.. I can't get even get mad at that face. Look at her!\n\nAnyways, this troll's name is TRIXIE DIPSIE. She opens her email app to find out that she's already enrolled in the nearest university (applied on the way here). \n\nShe's also already secured living accommodations, citizenship, passive income, and a bus ride ALL with her mind blowing wit.\n\nGod, she's so much cooler than the other guy.\n\nAnyways, all these preparations are just the first step in a long and elaborate plan... to...\n\nMan, the troll ipad thing was going to be like, a full-length bit, you know. Like, she was going to ask for user commands, and then she'd be like \"haha nooo I have a troll ipad I already have a comprehensive bucket list of exactly everything I want to do\". \n\nAlso I'd use this as a segue into like, the worldbuilding for where she's from! Like, obviously she's a troll but its a FAN COMIC so the place she's from is DIFFERENT.. like a FAN INTERPRETATION thing. Fuuuck.\n\nThanks Trixie. Everybody say thanks trixie. Seriously scroll down to the comments right now and do it. Nerd.",
+      "n": [17]
+    },
+    {
+      "d": 1762405172582,
+      "c": "Trixie: Claim the first actual line of dialogue in this comic",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0017.gif[/img]\n\n[spoiler open=\"Open me\" close=\"Close me\"]\n[color=#c7ff1c]TRIXIE: Oh, me? Hi!! 8D[/color]\n[color=#c7ff1c]TRIXIE: Hi!! Hi!! Hi!! 🙂[/color]\n[color=#c7ff1c]TRIXIE: Why aren't you talking?[/color]\n[/spoiler]\n\nCrap, she doesn't have anyone to talk to yet! Lame. Let's give her someone to talk to..\nYOU!\n\nThat's right. YOURE gonna talk to Trixie now. Heh. How? Just watch...\n\n[spoiler open=\"Show mystery conversation thing\" close=\"nopenopenopenopenope\"]\nYOU: <input size=\"60\" placeholder=\"type your lines here, it's like madlibs!\"></input>\n[color=#c7ff1c]TRIXIE: Woah, who was that?[/color]\nYOU: <input size=\"60\" placeholder=\"I dunno, why don't you tell her?\"></input>\n[color=#c7ff1c]TRIXIE: Ohh... that doesn't make much sense and it sounds stupid but ok 8)[/color]\n[color=#c7ff1c]TRIXIE: Hm... you're a HUMAN right? Heh.[/color]\nYOU: <input size=\"60\" placeholder=\"I'm looking at you therians.\"></input>\n[color=#c7ff1c]TRIXIE: Something along those lines.. i guess.[/color]\n[color=#c7ff1c]TRIXIE: Anyways your planet is DOOOMED!!! DOOOOMED!!! MYA AHA HHA HAHA HA HAHAHAHA!!! heehehee >8)[/color]\nYOU: <input size=\"60\" placeholder=\"Ok listen.. you COULD tell her she's fictional but would that be any fun?\"></input>\n[color=#c7ff1c]TRIXIE: Oh.. hah, my typing quirk?[/color]\nYOU: <input size=\"60\" placeholder=\"That would've sounded really stupid if you didn't ask about that.\"></input>\n[color=#c7ff1c]TRIXIE: I just type normal, I guess! I don't know, some of my friends have CRAAAZY typing quirks but mine's just normalspeak! It's a hassle on the ipad keyboard anyway...[/color]\nYOU: <input size=\"60\" placeholder=\"And then you do an out of pocket non sequitur. Go ahead.\"></input>\n[color=#c7ff1c]TRIXIE: You know, for a voice in my head you sure are being very conservative with your unlimited power to beam text into my mind. 8|[/color]\nYOU: <input size=\"60\" placeholder=\"She's either desensitized or you fell for the oldest trick in the book\"></input>\n[color=#c7ff1c]TRIXIE: Well nevertheless, there's the bus... was fun talking to you![/color]\nYOU: <input size=\"60\" placeholder=\"You just got IGNORED by a comic character. Welcome to the club.\"></input>\n[/spoiler]",
+      "n": [18]
+    },
+    {
+      "d": 1762405172582,
+      "c": "Trixie: Board bus",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0018.gif[/img]\n\n<div class=\"spoiler\"><div>[color=#c7ff1c]TRIXIE: Bye BYE... 83[/color]</div></div>",
+      "n": [19]
+    },
+    {
+      "d": 1762477171275,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0019.gif[/img]",
+      "n": [20]
+    },
+    {
+      "d": 1762477171275,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0020.gif[/img]",
+      "n": [21]
+    },
+    {
+      "d": 1762477171275,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0021.gif[/img]\n\nYou sit in your MOM's CAR on your way to college for the day. There is absolutely nothing humiliating about this, as a matter of fact it's totally normal in today's car-dependent society. The rain has mostly subsided by now...",
+      "n": [22]
+    },
+    {
+      "d": 1762477171275,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0022.gif[/img]\n\n[spoiler open=\"Show Momlog\" close=\"Hide Momlog\"]\nMOM: So VINCENT... did you see that huge explosion outside our house?\n[color=#b18cff]VINCE: yeah..[/color]\nMOM: Yeah, it was cordoned off by the fire department when we were LEAVING... I wonder what's up with that?\n[color=#b18cff]VINCE: mhm..[/color]\nMOM: Do you think Hamas did it? They're so AGGRESSIVE these days... you know, it's hard to feel safe nowadays what with all this conflict going on!\n[color=#b18cff]VINCE: mhm..[/color]\nMOM: Vincent... you know I've always been open-minded about your habits...\nMOM: But you can't let those wokes brainwash you, alright? I mean.. our CULTURE is under attack and  there's just crooks left and right making our town unsafe...\nMOM: Just don't pay them any mind, ok?\n[color=#b18cff]VINCE: ok..[/color]\nMOM: Good Boy! :)\n[/spoiler]",
+      "n": [23]
+    },
+    {
+      "d": 1762477171275,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0023.gif[/img]\n\n[spoiler open=\"Show Stupidlog\" close=\"Hide Stupidlog\"]\nMOM: By the way, I saw the FUNNIEST cat video earlier. It's AI but its so silly, that stuff is so high quality now, I'll send it to you later!\n[color=#b18cff]VINCE: mm.[/color]\nMOM: You know, I was watching FOX the other day and blah bllah blah blah blah blah blah blah culture blah blah blah blah traditional values and balh blah blah i consult chatGPT for financial advice blah blah transing blah blah blah blah blah woke woke blah blah kirk blah blah blah imigrants blah blah blah[/spoiler]\n\n...\n\nYou tune out the rest.\n\nYou used to like your mom.",
+      "n": [24]
+    },
+    {
+      "d": 1762477171275,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0024.gif[/img]\n\nYou're on Discord talking to your friends in a relatively small server.\n\nIn case you missed it, your username is [color=#b18cff]PedigreeNights[/color].\n\n[spoiler open=\"Show Discordlog\" close=\"Hide Discordlog\"]\n[color=#b18cff]PEDIGREENIGHTS: So there was a huge explosion outside my house this morning[/color]\n[color=#ff5353]PFIZER4345: Oh my god! I'm so sorry 😟 are you ok?[/color]\n[color=#ffc02f]BUNNY_VRISKA: oh yeah i saw the smoke earlier[/color]\n[color=#b18cff]PEDIGREENIGHTS: Yeah it was a few blocks away. the fire department walled off the entire area, but it doesn't look like it destroyed houses.[/color]\n[color=#58d1fa]FIONASHEX9: yyikes..[/color]\n[color=#ff5353]PFIZER4345: I'm glad you're well, at least![/color]\n[color=#b18cff]PEDIGREENIGHTS: Can you believe my mom thinks it's Hamas[/color]\n[color=#ffc02f]BUNNY_VRISKA: someone must've condemned them LOL[/color]\n[color=#ff5353]PFIZER4345: That's not a laughing matter! This is a very serious topic and I can't believe you would make light of it like that.[/color]\n[color=#ffc02f]BUNNY_VRISKA: chill..[/color]\n[color=#58d1fa]FIONASHEX9: I-... yeah. People DIE in that war you know? You need to stop just ACTING like this, Vriska. /gen[/color]\n[color=#ffc02f]BUNNY_VRISKA: ok.. sorry, jeez.[/color]\n[color=#b18cff]PEDIGREENIGHTS: My mom's just spewing fash stuff again... god, she used to be normal but now I don't know if she remembers what it's like to think.[/color]\n[color=#ffc02f]BUNNY_VRISKA: god, that sucks.[/color]\n[color=#ff5353]PFIZER4345: Yeah :c[/color]\n[color=#9d9f8e]MATT8374935: hi[/color]\n[/spoiler]\n\nYou're not the biggest fan of all of them. Or most of them. But they're the people you talk to.",
+      "n": [25]
+    },
+    {
+      "d": 1762477171275,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0025.gif[/img]\n\nYou make out an odd reflection on your phone screen...",
+      "n": [26]
+    },
+    {
+      "d": 1762477171275,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0026.gif[/img]\n\nDid you see that right?",
+      "n": [27]
+    },
+    {
+      "d": 1762477171275,
+      "c": "Vincent: Look out the window.",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0027.gif[/img]\n\nA bus is parked next to your car. Inside sits a strange figure.",
+      "n": [28]
+    },
+    {
+      "d": 1762477171275,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0028.gif[/img]\n\nYou saw that. You saw that right?",
+      "n": [29]
+    },
+    {
+      "d": 1762477171275,
+      "c": "Vincent: Remember what you just saw.",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0029.gif[/img]\n\nThat was a grey girl! You're absolutely certain of it. You just saw a girl with GREY skin! And Horns! What the fuck?",
+      "n": [30]
+    },
+    {
+      "d": 1762854686553,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0030.gif[/img]",
+      "n": [31]
+    },
+    {
+      "d": 1762854686553,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0031.gif[/img]",
+      "n": [32]
+    },
+    {
+      "d": 1762854686553,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0032.gif[/img]",
+      "n": [33]
+    },
+    {
+      "d": 1762854686553,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0033.gif[/img]\n\n[spoiler open=\"Show Lecturelog\" close=\"Hide Lecturelog\"]\nPROF: So yeah basically, just substitute the part you want to derive as U and then take the derivative of that and U and then put it back in or whatever. Umm…\nPROF: Oh yeah I forgot about this slide. Yada yada yada... yeah I guess here’s a proof or whatever I don’t really care about that.\nRANDOM STUDENT: Ummm professor I have a question.\nPROF: Yes what is it?\nRANDOM STUDENT: Ok so that part right there like 3 steps ago\nPROF: Hmm.. this?\nRANDOM: No further back.\nPROF: This bit?\nRANDOM: No not that\nPROF: This?\nRANDOM: No\nPROF: This part?\nRANDOM: Yeah that.\nRANDOM: Ok so, that plus thing right there.\nPROF: The plus sign?\nRANDOM: Ummm yeah... what does that mean? The plus, when there’s 2 things around it... what does that mean?\nPROF: Oh... that? That’s a uhh…\nPROF: Right, yeah this is an “addition symbol”.\nRANDOM: Umm...\nPROF: Ok, so we’re gonna need a bit to explain this. Basically, imagine you have 1 slice of cheese, and then someone gives you another slice of cheese...\nRANDOM: Waow.. I like cheese...\n[/spoiler]\n\nHe spends the next 40 minutes on this and you're paying full attention.",
+      "n": [34]
+    },
+    {
+      "d": 1762854686553,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0034.gif[/img]\n\n[spoiler open=\"Show Discordlog\" close=\"Hide Discordlog\"]\n[color=#b18cff]pedigreeNights: Wordle 1606 6/6[/color]  \n⬛⬛⬛⬛⬛  \n⬛🟨⬛⬛⬛  \n⬛⬛🟨⬛⬛  \n🟨⬛🟨⬛⬛  \n🟩⬛⬛⬛🟩  \n🟩🟩🟩🟩🟩  \n[color=#ff5353]pfizer4345: Wordle 1607 6/6[/color]  \n🟩⬛⬛⬛⬛  \n⬛🟩⬛⬛⬛  \n⬛⬛🟩⬛⬛  \n⬛⬛⬛🟩⬛  \n⬛⬛⬛⬛🟩  \n🟩🟩🟩🟩🟩  \n[color=#ff5353]pfizer4345: strange![/color]  \n[color=#ffc02f]bunny_vriska: scavenger hunt ass wordle[/color]  \n[color=#b18cff]pedigreeNights: tortoise and the hare ass wordle. bro said slow and steady wins the race[/color]  \n[color=#ff5353]pfizer4345: I promise i didn't make that up! I just figured i could try a wide variety of letters to see what sticks regardless of what was filled in before... but i got really lucky this time.[/color]  \n[color=#ffc02f]bunny_vriska: no offense but there's like a million things wrong with that strategy[/color]  \n[color=#b18cff]pedigreeNights: today's was so bs anyways. wait thats tomorrows. still[/color]  \n[color=#ffc02f]bunny_vriska: Wordle 1606 6/6[/color]  \n⬛🟩⬛⬛⬛  \n⬛🟩⬛⬛⬛  \n⬛🟩⬛🟥⬛  \n⬛⬛🟩🟩⬛  \n🟩🟩🟩🟩🟩  \n[color=#ffc02f]bunny_vriska: wow that was pretty good[/color]  \n[color=#ffc02f]bunny_vriska: shame i got penalized[/color]  \n[color=#58d1fa]fionasHex9: Not the evil letter- 😭😭😭[/color]  \n[color=#ff5353]pfizer4345: Hello Fiona! :)[/color]  \n[color=#58d1fa]fionasHex9: hi pfizer![/color]  \n[color=#58d1fa]fionasHex9: by the way, how was everyone's halloween? I know its kind of late but i forgot to ask about that.[/color]  \n[color=#b18cff]pedigreeNights: family event that was about it[/color]  \n[color=#ff5353]pfizer4345: oh you all KNOW what I dressed up as![/color]  \n[img=400x400]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/covid/beware.jpg[/img]\n[color=#ff5353]pfizer4345: Masked and in my room, of course. Halloween is one of the biggest super-spreader events![/color]  \n[color=#58d1fa]fionasHex9: aren't you vaccinated like, 50 times? It's been like 5 years...[/color]  \n[color=#ff5353]pfizer4345: Better to be safe than sorry! :D also, its 53. And there's new variants all the time![/color]  \n[color=#ff5353]pfizer4345: BEWARE of coronavirus![/color]  \n[color=#ffc02f]bunny_vriska: you're awesome pfizer this is why i love talking with you[/color]  \n[color=#ff5353]pfizer4345: Hehehe, thanks! :*3[/color]  \n[color=#ff5353]pfizer4345: I'm drafting 20 new infographics for my blog.. though I need to get some sleep... -3-[/color]  \n[color=#58d1fa]fionasHex9: I respect your dedication... i know it sounds weird to say but your obsession with covid KIIIND of makes you seem like a Homestuck character! Hehe, no offense. /gen[/color]  \n[color=#ff5353]pfizer4345: Ah yes, Homestuck! I... haven't read it...[/color]  \n[color=#58d1fa]fionasHex9: It's really good! You can ignore the fandom haha they're kind of dumb... but it's a really good webcomic![/color]  \n[color=#58d1fa]fionasHex9: Basically the main characters always have like a few specific  weird interests that they're passionate about, and yours reminded me of that![/color]  \n[color=#ff5353]pfizer4345: Isn't having interests like that... normal? As far as even \"weird interests\" go... that is a trait some people have regardless of a webcomic, is it not?[/color]  \n[color=#58d1fa]fionasHex9: Umm... yeah i guess but I'm just saying it reminded me of that.[/color]  \n[color=#ff5353]pfizer4345: It's just a little weird to label me as a webcomic character for having interests :P[/color]  \n[color=#58d1fa]fionasHex9: No... that's not- aghh whatever... sorry.[/color]  \n[color=#ffc02f]bunny_vriska: girl who's only read homestuck:[/color]  \n[color=#58d1fa]fionasHex9: says the person named bunny vriska![/color]  \n[color=#58d1fa]fionasHex9: Anyways homestuck is really good pfizer! Sorry for labelling you like that, but you really should read it! I think you'd like it :)[/color]  \n[color=#ff5353]pfizer4345: I will consider![/color]  \n[color=#58d1fa]fionasHex9: My favorite thing about it is all the trolls, theres so many of them and they're all really good characters.. (well, except for SOME.. but I can't say that here hehehe)[/color]  \n[color=#58d1fa]fionasHex9: But they live in an alternate version of earth called alternia (which was named by Toby Fox who worked on the comic btw) and they have a blood system and powers and a separate civilization and all sorts of cool stuff![/color]  \n[color=#ff5353]pfizer4345: :3[/color]  \n[color=#58d1fa]fionasHex9: Not to mention there's a bit of... *yuri* ;)[/color]  \n[color=#ff5353]pfizer4345: i see.... sounds cool! I'll look into it when I'm done with these maybe...[/color]  \n[color=#ffc02f]bunny_vriska: it is pretty good i think. but for all the opposite reasons fiona just mentioned.[/color]  \n[color=#b18cff]pedigreeNights: I heard it references MLP... maybe I should check it out.[/color]  \n[color=#ffc02f]bunny_vriska: i think you'd like it, PN! I  mean, it's an integral part of 2010's culture after all...[/color]  \n[color=#b18cff]pedigreeNights: Yes, but I feel like I already got the gist of that. Though perhaps I'd be able to recognize more references and effects after reading it.[/color]  \n[/spoiler]",
+      "n": [35]
+    },
+    {
+      "d": 1762854686553,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0035.gif[/img]\n\n[spoiler open=\"Show Discordlog\" close=\"Hide Discordlog\"]\n[color=#ffc02f]bunny_vriska: I mean you probably know just about all the references, that's just the surface. I think it's genuinely just a really well written and interesting story. There are lots of parts where it really pushes the boundary of what can be deemed a \"comic\".[/color]  \n[color=#ffc02f]bunny_vriska: The characters are also super well written![/color]  \n[color=#58d1fa]FionasHex9: Up to a point... but I digress.[/color]  \n[color=#b18cff]PedigreeNights:... hm hm.. isn't it like really long though?[/color]  \n[color=#b18cff]PedigreeNights: Maybe i'll read it this summer.[/color]  \n[color=#ff5353]pfizer4345: Ok... 8 more PSAs done... good night! :D[/color]  \n[img=400x400]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/covid/flugreen.jpg[/img]\n[color=#b18cff]PedigreeNights: God i can't wait for this lecture to end.[/color]  \n[/spoiler]",
+      "n": [36]
+    },
+    {
+      "d": 1762854686553,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0036.gif[/img]\n",
+      "n": [37]
+    },
+    {
+      "d": 1764286583231,
+      "c": "Trixie: OMG HI!!!",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0037.gif[/img]\n\n<div class=\"spoiler\"><div>\n[color=#c7ff1c]TRIXIE: I'm TRIXIE! 8DDDD[/color]\n</div></div>",
+      "n": [38]
+    },
+    {
+      "d": 1764286583231,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0038.gif[/img]\n\n<div class=\"spoiler\"><div>\nPROF: Um ok cool, are you enrolled in this class?\n[color=#c7ff1c]TRIXIE: INDEEDY! *teeheehee! 8D*[/color]\nPROF: Hmm... ok yeah, \"Trixie Dipsie\"...\nPROF: You can go take a seat.\n[color=#c7ff1c]TRIXIE: I'm So EXCITED to learn![/color]\nPROF: mhm..\n\nRANDOM: (she's GREY...)\n</div></div>",
+      "n": [39]
+    },
+    {
+      "d": 1764286583231,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0039.gif[/img]\n\n([color=#b18cff]oh god oh god[/color])",
+      "n": [40]
+    },
+    {
+      "d": 1764286583231,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0040.gif[/img]\n\n<div class=\"spoiler\"><div>\n[color=#c7ff1c]TRIXIE: I'm going to sit next to you[/color]\n</div></div>",
+      "n": [41]
+    },
+    {
+      "d": 1764286583231,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0041.gif[/img]",
+      "n": [42]
+    },
+    {
+      "d": 1764286583231,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0042.gif[/img]\n\n<div class=\"spoiler\"><div>\n[color=#c7ff1c]TRIXIE: What are you STUDYING? 8D[/color]\n[color=#b18cff]VINCENT: ueh..[/color]\n</div></div>",
+      "n": [43]
+    },
+    {
+      "d": 1764286583231,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0043.gif[/img]\n\n<div class=\"spoiler\"><div>\n[color=#c7ff1c]TRIXIE: What's on your COMPUTER? 8D\nTRIXIE: Can I SEE?[/color]\n</div></div>\n\n[spoiler open=\"Show Discordlog\" close=\"Hide Discordlog\"]\n[color=#b18cff]PN: What the fuck[/color]\n[color=#b18cff]PN: There's some weird cosplayer sitting next to me and being rly invasive for some reason[/color]\n[color=#58d1fa]FH9: ;O what's she cosplaying?[/color]\n[color=#b18cff]PN: Like, a homestuck troll or something? I dont know. isnt halloween over? i dont think there are any cons nearby either[/color]\n[color=#58d1fa]FH9: Ok WAIT WAIT![/color]\n[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/misc/TheTwelveHomestuckTrolls.webp[/img]\n[color=#58d1fa]FH9: Which one?[/color]\n[color=#b18cff]PN: she doesn't look like any of those[/color]\n[color=#b18cff]PN: for starters she has blueish hair[/color]\n[color=#b18cff]PN: And her eyes are like, REALLY BIG? and greenish yellow?[/color]\n[color=#ffc02f]BV: what does she smell like[/color]\n[color=#b18cff]PN: ...[/color]\n[/spoiler]",
+      "n": [44]
+    },
+    {
+      "d": 1764286583231,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0044.gif[/img]\n\n[spoiler open=\"Show Discordlog\" close=\"Hide Discordlog\"]\n[color=#b18cff]PN: she wont stop trying to get close to me is every homestuck fan like this[/color]\n[color=#ffc02f]BV: i dont think anyone needs to answer that[/color]\n[color=#b18cff]PN: is this like a \"Troll thing\" do they do this in the comic[/color]\n[color=#58d1fa]FH: no not rly..[/color]\n[color=#ff5353]PF: [virus.jpg][/color]\n[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/covid/virus.jpg[/img]\n[/spoiler]",
+      "n": [45]
+    },
+    {
+      "d": 1764286583231,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0045.gif[/img]\n\n<div class=\"spoiler\"><div>\n[color=#b18cff]VINCENT: (stop that!)[/color]\n[color=#c7ff1c]TRIXIE: let me touch it![/color]\n[color=#b18cff]VINCENT: (stop!!)[/color]\n</div></div>",
+      "n": [46]
+    },
+    {
+      "d": 1764286583231,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0046.gif[/img]\n\n<div class=\"spoiler\"><div>\n[color=#c7ff1c]TRIXIE: Ah yes this device is WONDERFUL! 8DD[/color]\n[color=#b18cff]VINCENT: leave me alone![/color]\n[color=#c7ff1c]TRIXIE: Let's EXPLORE the wonders of \"Internet!\" 8)[/color]\n[color=#b18cff]VINCENT: What's your problem??[/color]\n</div></div>",
+      "n": [47]
+    },
+    {
+      "d": 1764286583231,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0047.gif[/img]\n\n<div class=\"spoiler\"><div>\n[color=#c7ff1c]TRIXIE: eeeheeheeheehee! lemmetry[/color]\n[color=#b18cff]VINCENT: no![/color]\n[color=#c7ff1c]TRIXIE: gimmie 8)[/color]\n[color=#b18cff]VINCENT: no!![/color]\n[color=#c7ff1c]TRIXIE: gimmie 8)[/color]\n[color=#b18cff]VINCENT: fuck off![/color]\n???: psst\n[color=#c7ff1c]TRIXIE: I wanna play WEB GAMES![/color]\n[color=#b18cff]VINCENT: then bring your own laptop![/color]\n[color=#c7ff1c]TRIXIE: Lets be friends![/color]\n[color=#b18cff]VINCENT: no![/color]\n???: pssssst\n[color=#b18cff]VINCENT: what?[/color]\n???: You! the grey girl!\n[color=#c7ff1c]TRIXIE: TRIXIE is the name! Trixie DIPSIE! 8DDDDDDDDDD[/color]\n</div></div>",
+      "n": [48]
+    },
+    {
+      "d": 1764286583231,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0048.gif[/img]\n\n<div class=\"spoiler\"><div>\n???: I really like your cosplay! Is that a fantroll?\n[color=#c7ff1c]TRIXIE: TRIXIE understands your sentiment, but she must clarify that this is indeed NOT a COSPLAY!\nTRIXIE: Trixie is a REAL LIFE TROLL from SPACE![/color]\n???: Hahaha you're really commited to the bit! Mad respect..\n[color=#c7ff1c]TRIXIE: Trixie is not a \"bit\"! She's real! This is not a joke![/color]\n[color=#c7ff1c]TRIXIE: Not EVERYTHING is make-believe. 8D[/color]\n???: Umm hahaha i'm not sure if i can believe that... I mean its a good cosplay!\n[color=#c7ff1c]TRIXIE: TRIXIE Is not costume  playing!![/color]\n???: Ok uh can you like prove it then...\n[color=#c7ff1c]TRIXIE: Sure! Trixie will prove she is Trixie![/color]\n</div></div>\n\n[u]content warning for next page: boobs warning! skip if youre scared of boobs[/u]",
+      "n": [49]
+    },
+    {
+      "d": 1764286583231,
+      "c": "Trixie: Prove you're a real-life troll in a  normal way",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0049.gif[/img]\n\n<div class=\"spoiler\"><div>\n[color=#c7ff1c]TRIXIE: Look! These are TRIXIE's GRUB SCARS that she shed after her larval stage![/color]\n[color=#c7ff1c]TRIXIE: Trixie can let you FEEL them if you like 8D\nTRIXIE: Rest assured these are not \"smoken mirrors\"![/color]\n</div></div>",
+      "n": [50]
+    },
+    {
+      "d": 1764286583231,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0050.gif[/img]",
+      "n": [51]
+    },
+    {
+      "d": 1764286583231,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0051.gif[/img]\n\n<div class=\"spoiler\"><div>\nPROF: Ok can you please not expose yourself in- \nPROF: OH MY GOD are those grub scars. Like from homestuck trolls?\n</div></div>",
+      "n": [52]
+    },
+    {
+      "d": 1767049969071,
+      "c": "Trixie: Stop exposing yourself immediately",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0052.gif[/img]\n\n<div class=\"spoiler\"><div>RANDOM: Umm… did SOMEBODY say GRUB SCARS?\nRANDOM 2: You have GRUB SCARS?\nRANDOM 3: What’s “grub scar”?\nRANDOM 2: OMG! Have you read Homestuck? It’s like a thing HOMESTUCK trolls have! They get them at birth or something its like a belly button\nRANDOM 3: Holey guacamoley... waaiiiitt.... doesn’t this mean ALIENS are REAL??\nRANDOM 4: HOMESTUCK’S REAL???\nRANDOM 5: OH MY GOD A REAL LIFE HOMESTUCK TROLL?!\nRANDOM 6: AAAGHH!!! A REAL LIFE HOMESTUCK TROLL! EEEE!!!\nRANDOM 7: Heh, welp... I’ve officially SEEN IT ALL now...\n</div></div>",
+      "n": [53]
+    },
+    {
+      "d": 1767049969071,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0053.gif[/img]\n\n<div class=\"spoiler\"><div>RANDOM 8: Ok but are you sure you’re an  alien ? I mean you can do pretty advanced stuff with cosplay now and I just want to make sure.\nRANDOM 9: She’s OBVIOUSLY a real life troll dude, she’s got GRUB SCARS! GRUB. FUDGING. SCARS.\n[color=#c7ff1c]TRIXIE: Worry not, FRIENDS! 8D Trixie has anticipated this line of IN-QUIRY, and have accordingly brought TROLL PHOTOGRAPHIC EVIDENCE... of Trixie’s TROLLIAN NATURE![/color]\nRANDOM 3: Waow...\n</div></div>",
+      "n": [54]
+    },
+    {
+      "d": 1767049969071,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0054.gif[/img]\n\n<div class=\"spoiler\"><div>[color=#c7ff1c]TRIXIE: Look.. these are some TROLL PHOTOS I took on Trixie’s HOME PLANET of ALTERNIA![/color]\n[color=#c7ff1c]TRIXIE: This is Trixie in Trixie’s HIVE! ! 8) Let me know what you think![/color]\nRANDOM 7: OH MY GOD IT'S REAL.\nRANDOM 12: I dunno… it looks kind of AI...\n[color=#c7ff1c]TRIXIE: These photographs are not fabricated! Yes[/color]\nRANDOM 12: Oh okay!\nRANDOM 9: Yay <3\n</div></div>",
+      "n": [55]
+    },
+    {
+      "d": 1767049969071,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0055.gif[/img]\n\n[spoiler open=\"Show Discordlog\" close=\"Hide Discordlog\"]\n[color=#b18cff]PN: Ok apparently she got EVERYONE in my class to think she’s like, an actual alien???[/color]\n[color=#58d1fa]FH: Erm... WAT-[/color]\n[color=#b18cff]PN: Some person asked about her cosplay and she insisted that it wasn’t one. So as “proof” she decided to flash in front of everyone? \nPN: And she had these like. Gross fleshy blue streaks on the side of her waist. Everyone’s calling these grub scars which i guess are some incredibly difficult to replicate troll biomarker or whatever.[/color]\n[color=#58d1fa]FH: I- oh...\nFH: PN I think she’s real. She’s definitely a real life troll.[/color]\n[color=#b18cff]PN: What? No!\nPN: You can do things like that pretty easily with cosplay right? Paper mache or whatever. Theres no way its that hard its not like these are indentations on her waist they’re literally protruding from her skin.\nPN: Anyways someone asked about this. As they should[/color]\n[color=#ffc02f]BV: Yeah I did that ages ago its not too complex[/color]\n[color=#b18cff]PN: As a response she took out her IPAD and now she’s showing them shit that looks like it was made with AI or obviously staged and they’re just taking it at face value\nPN: SHE. HAS. AN. IPAD.[/color]\n[color=#58d1fa]FH: I mean homestuck trolls are supposed to be pretty similar culturally to humans[/color]\n[color=#b18cff]PN: An IPAD!! Aliens don’t get ipads they get like a fucking hologram egg googly woogly implant or whatever. This has like, the exact form factor as our ipads\nPN: Ok well that’s just shitty worldbuilding then? Idk what to say[/color]\n[color=#58d1fa]FH: It’s not shitty! It’s done on purpose because in Homestuck human civilization as they know it is like, created by the trolls. It’s complicated! You really should just read it...[/color]\n[color=#b18cff]PN: whatever[/color]\n[color=#ffc02f]BV: No need to get so worked up about it lol\nBV: If she’s really an alien the news will probably say so.[/color]\n[color=#b18cff]PN: I GUESS.....[/color]\n[/spoiler]",
+      "n": [56]
+    },
+    {
+      "d": 1767049969071,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0056.gif[/img]",
+      "n": [57]
+    },
+    {
+      "d": 1767049969071,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0057.gif[/img]\n\nGAH!",
+      "n": [58]
+    },
+    {
+      "d": 1767049969071,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0058.gif[/img]\n\n[spoiler]\nLITERALLY EVERYONE EXCEPT VINCENT: HURRAY TRIXIE! HOORAY TRIXIE!!  \nRANDOM: HOMESTUCK IS REAL I”M GOING TO EXPLOOODEEEE!!!\nPROFESSOR: Oh my god. Aliens are real. Aliens are real and one appeared in MY lecture. I’m gonna be famous! \nEVERYONE, AGAIN: YAY TRIXIE!!  \n[color=#c7ff1c]TRIXIE: Yay!!! 8D[/color]  \n[color=#c7ff1c]TRIXIE: Trixie loves ALL of you!! Let’s be BEST FRIENDS! ^_^[/color]  \nRANDOM: E-even me?\n[color=#c7ff1c]TRIXIE: Yes![/color]  \nEVERYONE: WE LOVE YOU TOO TRIXIEE!!!! \n[color=#c7ff1c]TRIXIE: Trixie’s SO GLAD to receive support from you all! You are all just SO… SOO WONDERFUL! 8DDD[/color]  \n[/spoiler]",
+      "n": [59]
+    },
+    {
+      "d": 1767049969071,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0059.gif[/img]\n\nYeah. This continues for the rest of the hour. Everyone loves Trixie. It's a shame Vincent doesn't.\n\nIf I'm gonna be honest, he should totally reconsider. How could ANYONE hate a smile like this?\n\nVincent's enrolled in a LOT of classes too. I wonder why. He doesn't seem very enthusiastic about college so far, right?",
+      "n": [60]
+    },
+    {
+      "d": 1768300940204,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0060.gif[/img]\n\n<div class=\"spoiler\"><div>\n[color=#58d1fa]FH: Has anyone here watched the new Digital Circus episode?[/color]  \n[30 minute message gap]  \n[color=#ffc02f]BV: yeah i saw it last night, i thought it was actually pretty good.[/color]  \n[color=#ffc02f]BV: ok no. its not that good but i think it is the best one since the pilot[/color]  \n[color=#58d1fa]FH: What didn't you like about it? :o I thought it was peak![/color]  \n[color=#ffc02f]BV: Well[/color]  \n[color=#ffc02f]BV: ok you know that one gif of skibidi toilet ragatha[/color]  \n[color=#58d1fa]FH: what-[/color]  \n[color=#ffc02f]BV: it was from a children's youtube animation. which there's a lot of obviously.[/color]  \n[color=#ffc02f]BV: anyways I watched it out of curiosity and it had this really melodramatic storyline about like... kaufmo? whatever his name was you know the abstracted character thing from before the story[/color]  \n[color=#ffc02f]BV: it was talking about how he abstracted[/color]  \n[color=#ffc02f]BV: but it was also simultaneously switching back and forth between that and ragatha skibidi toilet and they reiterated on the kaufmo story 20 times through the like 40 minute runtime.[/color]  \n[color=#ffc02f]BV: anyways i watched several others by different channels. Out of curiosity.[/color]  \n[color=#58d1fa]FH: why[/color]  \n[color=#ffc02f]BV: i found that ALL of them iterated on something like this, they were about all the characters abstracting and pibby glitching or whatever and every video had 5 sad stories and 10 secret lore ARG analog horror bendy plotlines.[/color]  \n[color=#58d1fa]FH: I'm gonna pretend I understood all that.....[/color]  \n[color=#ffc02f]BV: i mean you do[/color]  \n[color=#58d1fa]FH: hhh... i do..[/color] \n[color=#ffc02f]BV: anyways the newest episode felt like that[/color]  \n[color=#ffc02f]BV: like, I know it was parodying those videos to an extent. but it was also that.[/color]  \n[color=#ffc02f]BV: I feel like the whole show is really just parodying itself and its core storyline is honestly really loose. it has character development for the sake of character development and assumes you already have a deep attachment to everyone.[/color]  \n[color=#ffc02f]BV: frankly i think it would have benefited from having a lot more but shorter episodes (they dont need to be that long anyway) to really sell the cast[/color]  \n[color=#58d1fa]FH: i think its fine honestly[/color]  \n[color=#ffc02f]BV: name 3 interesting things about Gangle[/color]  \n[color=#58d1fa]FH: Uhh i mean the masking thing is pretty cool right[/color]  \n[color=#58d1fa]FH: also she wants to be a comic artist[/color]  \n[color=#ffc02f]BV: exactly.[/color]  \n[color=#58d1fa]FH: I wasn't finished!![/color]  \n[color=#58d1fa]FH: Uhhh[/color]  \n[color=#58d1fa]FH: She likes Zooble! I think! Naming 3 interesting things about anyone is hard![/color]  \n[color=#ffc02f]BV: everyone likes each other! of course they would i mean the digital circus is just teeming with homoerotic tension thats like the basic aspect of it. I'll ignore the other statement you made.[/color]  \n[color=#58d1fa]FH: ..........................okayyyy[/color]  \n[color=#b18cff]PN: What are you two talking about?[/color]  \n[color=#ffc02f]BV: pomni[/color]  \n[color=#b18cff]PN: Ok i will choose not to participate in this conversation[/color]  \n[color=#ffc02f]BV: wait oh my god.[/color]  \n[color=#ffc02f]BV: check the news. it doesn't matter what channel.[/color]  \n[color=#ffc02f]BV: right now[/color]  \n[color=#b18cff]PN: what[/color]  \n</div></div>",
+      "n": [61]
+    },
+    {
+      "d": 1768300940204,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0061.gif[/img]\n\nOh, it looks like your professor you hate because you suck is streaming something on the projector.",
+      "n": [62]
+    },
+    {
+      "d": 1768300940204,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0062.gif[/img]",
+      "n": [63]
+    },
+    {
+      "d": 1768300940204,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0063.gif[/img]\n\nComing live from [???] university in Tacoma Washington where students have reported seeing a \"Live Alien\", here she is her name is Trixie, Trixie is there anything you would like to say?\n\n[color=#c7ff1c]TRIXIE: Hi!!! :DDD I'm SO EXCITED to be on your TeleVision! ^o^[/color]",
+      "n": [64]
+    },
+    {
+      "d": 1768300940204,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0064.gif[/img]\n\n",
+      "n": [65]
+    },
+    {
+      "d": 1768300940204,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0065.gif[/img]",
+      "n": [66]
+    },
+    {
+      "d": 1768300940204,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0066.gif[/img]",
+      "n": [67]
+    },
+    {
+      "d": 1768300940204,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0067.gif[/img]",
+      "n": [68]
+    },
+    {
+      "d": 1768300940204,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0068.gif[/img]\n\n<div class=\"spoiler\"><div>\n[color=#58d1fa]FH: DID YOU SEE THE NEWS???[/color]  \n[color=#b18cff]PN: YES[/color]  \n[color=#b18cff]PN: yes i have[/color]  \n[color=#b18cff]PN: oh my god can we stop talking about it[/color]  \n[color=#58d1fa]FH: It's just so crazy??!!!?!?? Trolls are real???? Just like that? Like, they're real??[/color]  \n[color=#b18cff]PN: Maybe[/color]  \n[color=#b18cff]PN: Or maybe she's just an attenion seeking cosplayer?? I literally haven't seen anything to indicate she's actually a troll besides everyone yelling about it.[/color]  \n[color=#58d1fa]FH: I don't know, if that many people believe something like that, it's probably true[/color]  \n[color=#b18cff]PN: I don't know how you survive in this world, FH.[/color]  \n[color=#b18cff]PN: Uuuuuuuuuuuuuuuughhhhhhhhhhdslfkj;lasdjsalkflkn[/color]  \n</div></div>",
+      "n": [69]
+    },
+    {
+      "d": 1770636990473,
+      "c": "Vincent: Get texted of that thing",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0069.gif[/img]",
+      "n": [70]
+    },
+    {
+      "d": 1770636990473,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0070.gif[/img]\n\nMost of the student body seems to be gathered where all the news vans are.",
+      "n": [71]
+    },
+    {
+      "d": 1770636990473,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0071.gif[/img]\n\n<div class=\"spoiler\"><div>[color=#c7ff1c]TRIXIE: HIII!!! HII!!! HELLO!! ^.^[/color]\n[color=#b18cff]VINCENT: ...[/color]</div></div>",
+      "n": [72]
+    },
+    {
+      "d": 1770636990473,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0072.gif[/img]\n\n<div class=\"spoiler\"><div>\n[color=#c7ff1c]TRIXIE: *inhale exhale inhale exhale inhale exhale inhale hale*[/color]\n[color=#c7ff1c]TRIXIE: You WOULD BELIEVE the amount of people with CAMERAS following Trixie![/color]\n[color=#c7ff1c]TRIXIE: :DDDDDDDDD[/color]\n[color=#b18cff]VINCENT: ok[/color]\n[color=#c7ff1c]TRIXIE: That means there were a LOT! By the way :)[/color]\n[color=#b18cff]VINCENT: mm.. okay[/color]\n[color=#c7ff1c]TRIXIE: Anyways Hi!!!! :DD[/color]\n[color=#b18cff]VINCENT: Hi.[/color]\n[color=#c7ff1c]TRIXIE: Wahaha! You are quite SPARING with your words, VINCENT! Perchance you would have more to SAY in a momentous occasion such as this?[/color]\n[color=#b18cff]VINCENT: No not really. I mean good job at pretending to be a space alien?[/color]\n[color=#c7ff1c]TRIXIE: Oh VINCENT, you are sure really FUNNY! XD but thats not what i MEANT![/color]\n[color=#b18cff]VINCENT: That's cool. Anyways what's your-[/color]\n[color=#c7ff1c]TRIXIE: HERE she is! :DDDD[/color]\n</div></div>",
+      "n": [73]
+    },
+    {
+      "d": 1770636990473,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0073.gif[/img]\n\n<div class=\"spoiler\"><div>[color=#b18cff]VINCENT: What?[/color]</div></div>",
+      "n": [74]
+    },
+    {
+      "d": 1770636990473,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0074.gif[/img]\n\n<div class=\"spoiler\"><div>\n[color=#c7ff1c]TRIXIE: That IS your motor transport, is it not? 8D[/color]\n[color=#b18cff]VINCENT: ......what?[/color]\n[color=#b18cff]VINCENT: wait how do you know that?[/color]\n[color=#c7ff1c]TRIXIE: I saw you in it on the way to COLLEGE silly![/color]\n[color=#b18cff]VINCENT: Oh, I... hmm[/color]\n[color=#b18cff]VINCENT: Wait why does that matter to you?[/color]\n</div></div>",
+      "n": [75]
+    },
+    {
+      "d": 1770636990473,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0075.gif[/img]\n\n<div class=\"spoiler\"><div>\n[color=#b18cff]VINCENT: Ok what are you doing.[/color]\n[color=#b18cff]VINCENT: Stop.[/color]\n</div></div>",
+      "n": [76]
+    },
+    {
+      "d": 1770636990473,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0076.gif[/img]\n\n<div class=\"spoiler\"><div>[color=#b18cff]VINCENT: Stop it! Why are you trying to get in my car[/color]\n[color=#c7ff1c]TRIXIE: Don't worry about that, i'm just gonna be going INSIDE of it![/color]\nMOM: Hi Vincent! Hahaha are you trying to ride in the front seat to impress the new girl? hahahahaa you know you're supposed to sit in the back right hahaha\n[color=#b18cff]VINCENT: Mom this girl keeps trying to go in the car[/color]\nMOM: Oh yeah don't worry about it that's just Trixie! Oh my god! I completely forgot to tell you!\n[color=#b18cff]VINCENT: huh??[/color]\nMOM: Get in the back seat</div></div>",
+      "n": [77]
+    },
+    {
+      "d": 1770636990473,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0077.gif[/img]\n\n<div class=\"spoiler\"><div>\nMOM: We're officially a HOST FAMILY for the FIRST ALIEN on EARTH!\n</div></div>",
+      "n": [78]
+    },
+    {
+      "d": 1770636990473,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0078.gif[/img]\n\n<div class=\"spoiler\"><div>[color=#b18cff]VINCENT: buh[/color]\n[color=#b18cff]VINCENT: whuh?[/color]</div></div>",
+      "n": [79]
+    },
+    {
+      "d": 1770636990473,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0079.gif[/img]\n\n<div class=\"spoiler\"><div>\n[color=#c7ff1c]TRIXIE: That means I'm your SISTER now! Basically[/color]\n[color=#b18cff]VINCENT: huh?[/color]\n[color=#c7ff1c]TRIXIE: 8D[/color]\n[color=#c7ff1c]TRIXIE: 8DDD[/color]\n[color=#c7ff1c]TRIXIE: 8DDDDDDDDDDDDDDDDDDDDDDDDDDD[/color]\n[color=#c7ff1c]TRIXIE: [size=48]8D[/size][/color]\n</div></div>",
+      "n": [80]
+    },
+    {
+      "d": 1770642681211,
+      "c": "END OF CHAPTER 1",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0080.png[/img]\n\nWait what?",
+      "n": [81]
+    },
+    {
+      "d": 1770642681211,
+      "c": "AUTHOR'S ROOM 1",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0081.png[/img]\n\nYeah that's right. It's obligatory author self-insert time.",
+      "n": [82]
+    },
+    {
+      "d": 1770642681211,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0082.png[/img]",
+      "n": [83]
+    },
+    {
+      "d": 1770642681211,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0083.png[/img]\n\nSomewhere, in the offices of SKYNET SYSTEMS, a Palantir Subsidiary....",
+      "n": [84]
+    },
+    {
+      "d": 1770642681211,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0084.png[/img]",
+      "n": [85]
+    },
+    {
+      "d": 1770642681211,
+      "c": "Inside the inconspicuous mouse hole...",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0085.png[/img]\n\nWelcome to \"Easy to Draw\" land!",
+      "n": [86]
+    },
+    {
+      "d": 1770642681211,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0086.png[/img]",
+      "n": [87]
+    },
+    {
+      "d": 1770642681211,
+      "c": "Hi!",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0087.png[/img]\n\nI'm the mouse responsible for your new least favorite comic!",
+      "n": [88]
+    },
+    {
+      "d": 1770642681211,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0088.png[/img]\n\nHere's a quick recap of the events so far:\nA troll girl named TRIXIE lands on earth. At college she meets an emo boy named VINCENT who hates her. Despite this, she attains NATIONWIDE POPULARITY in less than a day. Vincent's mom that he hates allows her to stay at their house, becoming her effective HOST FAMILY. Vincent and Trixie will now share a House.\n\nWow. That was short, wasn't it? I mean it's kind of weird, with most MSPFAs you'd expect this narrative break like, 1000 pages in. But this isn't most MSPFAs.\n\nThe subsequent chapters will likely be longer, the sole purpose of this one was exposition.\nI decided to include this authorsona segment because I like you. And I like making comics. And I want to talk to you, the reader, as you read the comic! Like a little book club, right? I think that's cute enough.\n\nOf course, I won't tell you what to think about this comic. You probably think it's mediocre already. I mean, look at how INCONSISTENT the characters are!\n\nThat's because I wrote this on and off over the course of several months lol!\n\nNo seriously, there are a lot of factors that contribute to slow update speeds including but not limited to: College, attention span issues, my alternating phase interest in Homestuck, moving to a completely new operating system 3 times and having to transition stuff from CSP to Krita, and art/writer's block\n\nBecause of this, I've developed a work ethic of: Work a little bit on the update. Do absolutely nothing of value for 2-∞ weeks. Decide to work on the entire update until 5AM one day and post it. And then write an entire author's segment for the next 2 hours and post that too. Repeat.\n\n\nSighhh... this is getting quite narcissistic! Oh well.\n\nEnough about me (seriously), what about the comic?\n\nAs you may have noticed, the world is a bit DIFFERENT. A bit different from real life, and also Homestuck. This is deliberate. I'll leave the reason up to your imagination!\n\nHowever, just like real life... it sucks! Everything sucks, right? Oh my god it sucks.\nThat's what this comic is about. Of course, it's about everything after that too.\n\nThat being said:\n[u]the comic will get depressing.[/u]\n\nthat's your only warning.",
+      "n": [89]
+    },
+    {
+      "d": 1770642681211,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0089.png[/img]\n\nWell, that was a long enough spiel.\n\nUP NEXT IN DEMON VAMPIRES FROM OUTER SPACE!\n\nWhat's the deal with the other colored text characters? How much more miserable can I make the reader? Chapter 2 will introduce the extended cast! I hope you like them!\n\n\nOk anyways I really need to start hashing out the next update lol.",
+      "n": [90]
+    },
+    {
+      "d": 1770642681211,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0090.png[/img]",
+      "n": [91]
+    },
+    {
+      "d": 1773293925579,
+      "c": "Chapter 2: Social Distance",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0090_1.gif[/img]\n\nThe next day (night?), somewhere in THE NETHERLANDS...",
+      "n": [92]
+    },
+    {
+      "d": 1773293925579,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0091.png[/img]",
+      "n": [93]
+    },
+    {
+      "d": 1773293925579,
+      "c": "Go inside the house. Creep.",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0092.png[/img]\n\nIt looks like someone's fast asleep over there.\n\n\n...Also, does this look like a minecraft house you'd build as a kid or what? There's so much glass. Absolutely ridiculous...",
+      "n": [94]
+    },
+    {
+      "d": 1773293925579,
+      "c": "Please stop narrating",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0093.png[/img]\n\nOk but there's literally a new character right there. Don't you wanna meet her?\n\n...\n\n...\n\nCMOOON.... I promise I'll be less annoying after this. This is a fan favorite! Everyone loves um... her. But yeah sure I guess I'll just stop narrating.\n\n...\n\n...\n\n\n...\n\n\n...\n\nHah. Yeah. YEAH that's what I thought.\n\nThis is CRONA. CRONA VALERIE. She is currently ASLEEP.\n\nHer likes include: Coronavirus vaccines, epidemiological safety, and... Graphic Design.\n\nHer dislikes: Coronavirus, and people who willingly or accidentally spread coronavirus (We'll get into this later)\n\n\nShe's also AUTISTIC-CODED.\n\nDo you like my original character? I hope you do. Because we're gonna be Crona... TOGETHER!",
+      "n": [95]
+    },
+    {
+      "d": 1773293925579,
+      "c": "Be Crona.",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0094.png[/img]\n\n<div class=\"spoiler\"><div>\n[color=#ff5353]It's [size=24]<healthy>VACCINATION</healthy> DAY!!![/size][/color]\n</div></div>\n\nRight. Today is another one of your BI-DAILY <unhealthy>CORONAVIRUS</unhealthy> <healthy>VACCINATIONS</healthy>!\n \n(Bi-daily as in every other day, not twice a day.)",
+      "n": [96]
+    },
+    {
+      "d": 1773293925579,
+      "c": "Dressies for Crona!",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0095.png[/img]\n\nYou pick out a shirt. Every single one of these are of your own design!\n\nBelieve it or not, these shirts have become a fashion staple in the Netherlands as of late. You're very glad all these people are so willing to <healthy>spread awareness</healthy> about the deadly <unhealthy>COVID-19 virus</unhealthy>, and definitely aren't wearing these with HEINOUS POST-IRONIC INTENT.",
+      "n": [97]
+    },
+    {
+      "d": 1773293925579,
+      "c": "Brushies for Crona!",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0096.png[/img]\n\nYou've grown accustomed to.... swallowing toothpaste foam.\n\nOk, SURELY you could like, <unhealthy>take off</unhealthy> your <healthy>mask</healthy> or something. <unhealthy>For a bit, right?\n</unhealthy>\nNO. <healthy>You will never waver</healthy> in the WAR <healthy>AGAINST</healthy> <unhealthy>COVID</unhealthy>. In which you have joined the side of <healthy>AGAINST</healthy> <unhealthy>COVID</unhealthy>.\n\nYou also point out that this <healthy>mask</healthy> is made of PURE SOLIDIFIED <healthy>VACCINE</healthy> SATIN, which is 10000x more effective than <healthy>n95 masks</healthy> while lasting forever, despite maintaining the form factor of an <neutral>ordinary disposable mask</neutral>.\n\nSecond, your toothpaste is edible, and quite tasty!",
+      "n": [98]
+    },
+    {
+      "d": 1773293925579,
+      "c": "Computer time for Crona!",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0097.png[/img]\n\nYour morning is off to an excellent start! The perfect condition to be ruined with social media usage.",
+      "n": [99]
+    },
+    {
+      "d": 1773293925579,
+      "c": "Crona: Open Facebook.",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0098.png[/img]\n\nYou open <unhealthy>FACEBOOK</unhealthy>, the premier discussion board for <unhealthy>COVID-19</unhealthy> and related subjects.\n\nYou post expertly designed <healthy>infographics</healthy> and merch ads here. You get TONS of interactions on your posts, and are already in the global spotlight. People flock to you.\n\nYou don't usually get the most LIKES on your posts, though. Mostly angry faces.\n\nYou get lots of angry comments over basic assertations about <unhealthy>COVID-19</unhealthy>. Let's look at some!",
+      "n": [100]
+    },
+    {
+      "d": 1773293925579,
+      "c": "Crona: Look at the haters and losers.",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0099.png[/img]\n\nLook at all these <unhealthy>haters</unhealthy>, <unhealthy>antis</unhealthy>, <unhealthy>losers</unhealthy>, and <unhealthy>scoundrels</unhealthy>. These <unhealthy>poor souls</unhealthy>.\n\n\nOk wait that's just a robot. In fact, most of these are robots! Darn.\n\nYou feel like you MIGHT know <unhealthy>who's</unhealthy> automating all these accounts. Whatever.",
+      "n": [101]
+    },
+    {
+      "d": 1773293925579,
+      "c": "Scroll until you find a human response.",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0100.png[/img]\n\nWhups, Your 5 minutes of morning computer time are up!",
+      "n": [102]
+    },
+    {
+      "d": 1773683967266,
+      "c": "Dismiss the warning. You have free will.",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0101.png[/img]\n\nYou do have free will! And you're going to exercise that by turning off your computer, because you are very smart and executively functioning.\n\nLet's do something else with our day, shall we?\n\nBreakfast. You need that.\n\n\n<div class=\"spoiler\"><div>\nAUTHORS NOTE:\n\nThis and the next 2 panels are colored by the great [url=https://bsky.app/profile/juney-blues.bsky.social]juney-blues[/url]. ty for the help! ^_^ everybody thank juney</div></div>",
+      "n": [103]
+    },
+    {
+      "d": 1773683967266,
+      "c": "Go downstairs.",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0102.png[/img]",
+      "n": [104]
+    },
+    {
+      "d": 1773683967266,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0103.png[/img]",
+      "n": [105]
+    },
+    {
+      "d": 1773683967266,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0104.png[/img]",
+      "n": [106]
+    },
+    {
+      "d": 1773683967266,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0105.png[/img]",
+      "n": [107]
+    },
+    {
+      "d": 1773683967266,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0106.png[/img]\n\n<div class=\"spoiler\"><div>\n[color=#fe9cff]???: Is CRONA getting her widdle <healthy>vaxxies</healthy> today?[/color]\n</div></div>",
+      "n": [108]
+    },
+    {
+      "d": 1773683967266,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0107.png[/img]\n\n<div class=\"spoiler\"><div>[color=#ff5353]\nCRONA: Yes, <unhealthy>IVY</unhealthy>.\nCRONA: What, <healthy>would you like one too</healthy>? You could really use <healthy>it</healthy>.\nCRONA: For once.[/color]</div></div>",
+      "n": [109]
+    },
+    {
+      "d": 1773683967266,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0108.png[/img]\n\n<div class=\"spoiler\"><div>\n[color=#fe9cff]IVY: <healthy>Thanks</healthy>, but <unhealthy>no thanks</unhealthy>. I've already had my fair share of MICROPLASTICS and CARCINOGENS.[/color]\n[color=#ff5353]CRONA: The <unhealthy>COVID</unhealthy> <healthy>Vaccine</healthy> does NOT have carcinogens![/color]\n[color=#ff5353]CRONA: There's even been extensive <healthy>research</healthy> into this! A stupid amount of money that has to be spent on <healthy>research</healthy> about things everyone already knows because you keep calling it \"<unhealthy>fake science</unhealthy>!\"[/color]\n[color=#fe9cff]IVY: Uhh, checks notes, <unhealthy>GROKIPEDIA</unhealthy> begs to differ. And yes, <unhealthy>it is</unhealthy>.[/color]\n[color=#ff5353]CRONA: It's <healthy>PEER REVIEWED</healthy>! And <healthy>REPLICABLE</healthy>! Unlike what's spewed out of your <unhealthy>billion dollar autocomplete engine</unhealthy>, people actually VET this research![/color]\n[color=#fe9cff]IVY: BZZZT. Appeal to authority.[/color]\n[color=#ff5353]CRONA: You're the one regarding a COMPUTER as your-[/color]\n[color=#fe9cff]IVY: BZZZRRRT. Non sequitur. Try agaaaiiin!!![/color]\n[color=#ff5353]CRONA: Ok so how can you be so sure that what you read from a <unhealthy>chatbot</unhealthy> is correct?[/color]\n[color=#fe9cff]IVY: Easy. I <unhealthy>do my own research</unhealthy>.[/color]\n[color=#ff5353]CRONA: What?! Wait I didn't know you <unhealthy>did this</unhealthy>. Huh?[/color]\n</div></div>",
+      "n": [110]
+    },
+    {
+      "d": 1773685169407,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0109.png[/img]\n\n<div class=\"spoiler\"><div>\n[color=#fe9cff]IVY: Listen. I know what <unhealthy>germs</unhealthy> are. I also know what <healthy>vaccines</healthy> are![/color]\n[color=#fe9cff]IVY: I also know that. If you smash the two together, the <healthy>vaccine</healthy> is supposed to <healthy>kill</healthy> the <unhealthy>germ</unhealthy>.[/color]\n[color=#ff5353]CRONA: NOT how that works.[/color]\n[color=#fe9cff]IVY: No true scotsman fallacy. So I tested the <healthy>vaccine</healthy> on 2 babies, right? They both had <unhealthy>COVID</unhealthy> too.[/color]\n[color=#ff5353]CRONA: I don't even want to know where you got those.[/color]\n[color=#fe9cff]IVY: Test tubes. I bought test tubes with babies. Could you stop interrupting me?[/color]\n[color=#fe9cff]IVY: Anyways, I gave the babies that <healthy>vaccine shot</healthy> you like so much.[/color]\n[color=#fe9cff]IVY: After I dropped them out the window, the babies (which thankfully weren't mine) DIED.\nIVY: It DIED from the <unhealthy>Corona</unhealthy> <healthy>vaccine</healthy>! It DIED!![/color]\n[color=#fe9cff]IVY: (n=2)[/color]\n[color=#ff5353]CRONA: You killed 2 babies?[/color]\n[color=#fe9cff]IVY: Test tube babies. And they just died I didn't kill them. The <healthy>vaccine company</healthy> did. And also they weren't mine. Aren't you pro-death or whatever anyways?[/color]\n[color=#ff5353]CRONA: I...[/color]\n[color=#ff5353]CRONA: Ok I'm not even going to entertain this. Whatever.[/color]\n[color=#ff5353]CRONA: Also stop smoking <unhealthy>that stuff</unhealthy>, by the way! It's <unhealthy>unhealthy</unhealthy> for you! And everyone else![/color]\n</div></div>",
+      "n": [111]
+    },
+    {
+      "d": 1773685169407,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0110.png[/img]\n\n<div class=\"spoiler\"><div>\n[color=#fe9cff]IVY: OH. MY GAWDDDDDDDDDDDDDD. Get off your high horse! The <healthy>WHO</healthy> LITERALLY ENDORSED THIS.[/color]\n[color=#fe9cff]IVY: Remember their [color=#ff0101][url=https://file.garden/Yt9c8OgHkWVkfQq2/aliens/covid/permatripping.png]<unhealthy>𝕏</unhealthy>eet[/url][/color]?[/color]\n[color=#ff5353]CRONA: That was a TYPO!!!??[/color]\n[color=#fe9cff]IVY: More like, a COVERUP, for someone who leaked the #TRVTH.[/color]\n[color=#ff5353]CRONA: TO <unhealthy>SMOKE CORONAVIRUS</unhealthy>??!!![/color]\n</div></div>",
+      "n": [112]
+    },
+    {
+      "d": 1773685169407,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0111.png[/img]\n\n<div class=\"spoiler\"><div>\n[color=#fe9cff]IVY: It's literally <unhealthy>ALL NATURAL</unhealthy>. It's a real LIVING <unhealthy>virus</unhealthy>. It's heckin' BIOLOGICAL.[/color]\n[color=#ff5353]CRONA: EAAAGUGHHH!!! <healthy>GET AWAY GET AWAY GET AWAY FROM ME!!!</healthy>[/color]\n[color=#ff5353]CRONA: <healthy>SOCIAL DISTANCE</healthy>! <healthy>SOCIAL DISTANCE</healthy>! <healthy>1.5 METRES 1.5 METRES</healthy>!![/color]\n[color=#ff5353]CRONA: IMPURE! IMPURE!![/color]\n[color=#fe9cff]IVY: <unhealthy>HHHHHHhhhhhhhhhhhh</unhealthy>[/color]\n[color=#fe9cff]IVY: Look at yourself. <unhealthy>God</unhealthy>.[/color]\n[color=#fe9cff]IVY: This is why you're <healthy>AUTISTIC-CODED</healthy>. The worst mental disorder of them all.[/color]\n</div></div>",
+      "n": [113]
+    },
+    {
+      "d": 1773685169407,
+      "c": "☠⟹",
+      "b": "[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0112.png[/img]\n\n<div class=\"spoiler\"><div>[color=#ff5353]CRONA: UGHHH!!![/color]\n[color=#fe9cff]IVY: GAAAHAAHAHAHAAHAHAHA!!!!! ANOTHER WOKEOID OBLITERATED YET AGAIN BY FACTS AND LOGICGEM!\nIVY: WOMP. FUDGING. WOMP![/color]\n</div></div>",
+      "n": [114]
+    },
+    {
+      "d": 1773685169407,
+      "c": "☠⟹",
+      "b": "<div class=\"imgpop\">[img]https://file.garden/Yt9c8OgHkWVkfQq2/aliens/p/0113.png[/img]</div>\n\n\n<div class=\"spoiler\"><div>\n[color=#ff5353]CRONA: Weewaweewaa....~\nCRONA: I'm iVy! AnD iM sO sTuPiD <unhealthy>i SmOkE vIrUsEs</unhealthy>!!\nCRONA: Oh... oh yeah well, well you can't even SWEAR. Y-You can't even say cuss words because of <unhealthy>GOD</unhealthy> or something. You fucking fuck.\nCRONA: Ughh!!!\nCRONA: W-well, fuck you!\nCRONA: Yeah... that's.. what you get...\nCRONA: Ughh...[/color]\n</div></div>",
+      "n": [115]
+    }
+  ]
+}
