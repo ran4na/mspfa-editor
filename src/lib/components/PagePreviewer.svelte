@@ -11,12 +11,12 @@
 
   let page_data: PageData = $derived(adventure_data.p[page_index]);
   let next_page_data: PageData | undefined = $derived(
-    adventure_data.p[page_data.n[0] - 1],
+    page_data ? adventure_data.p[page_data.n[0] - 1] : undefined,
   );
   let adventure_css: string = $derived(adventure_data.y);
   // parsed page content
   let page_bb_tree: bb_tree | undefined = $derived(
-    build_bbcode_tree(page_data.b),
+    page_data ? build_bbcode_tree(page_data.b) : undefined,
   );
 
   let renderer = new HTML_Parser();
@@ -38,17 +38,21 @@
         <!-- Render adventure data here -->
         <div id="command">
           <h1>
-            {page_data.c}
+            {page_data ? page_data.c : ""}
           </h1>
         </div>
         <div id="comic-content">
-          <span>
+          <div>
             {@html parsed_content}
-          </span>
+          </div>
         </div>
         <div id="comic-next">
           {#if next_page_data}
-            <span class="next-link"><a href=".">{next_page_data.c}</a></span>
+            <span class="next-link"
+              ><a href="#top" onclick={(e) => e.preventDefault()}
+                >{next_page_data.c}</a
+              ></span
+            >
           {/if}
         </div>
       </div>

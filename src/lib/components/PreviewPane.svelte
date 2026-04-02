@@ -32,7 +32,6 @@
 
   @media (max-width: 650px) {
     .preview-pane {
-      flex-grow: 1;
       overflow-y: scroll;
     }
   }

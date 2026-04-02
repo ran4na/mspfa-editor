@@ -3,6 +3,9 @@
   import type { ComicData, PageData } from "../bb/Adventure";
   import InfoEditor from "./InfoEditor.svelte";
   import PageEditor from "./PageEditor.svelte";
+  import { flip } from "svelte/animate";
+  import { slide } from "svelte/transition";
+  import { backIn, backInOut, backOut, bounceInOut } from "svelte/easing";
 
   let {
     adventure = $bindable(),
@@ -14,26 +17,89 @@
 
   let file_input: HTMLInputElement;
 
+  // Man I dont feel like making another callback prop
   async function save_adventure() {
     let j = JSON.stringify(adventure);
     let file = new Blob([j], { type: "application/json" });
     let link = window.URL.createObjectURL(file);
+    // Yes. This is apparently the canonical way to download a file with a button press?
     const a = document.createElement("a");
     a.href = link;
     a.download = `${adventure.n}.json`;
+    // It creates a phantom link and clicks it
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
   }
 
+  // Grant I dont think using params longer than a single character for MSPFA jsons would affect
+  // The performance that much...
   async function load_adventure() {
     if (file_input.files) {
       let j = JSON.parse(await file_input.files[0].text());
       adventure = j as ComicData;
     }
   }
-  let pages_reversed = $derived(adventure.p.toReversed());
 
+  // Swap pages in place... updates their next values too
+  function swap_page(index: number, target_index: number) {
+    if (
+      index >= 0 &&
+      index < adventure.p.length &&
+      target_index >= 0 &&
+      target_index < adventure.p.length
+    ) {
+      let page = adventure.p[index];
+      let to_swap = adventure.p[target_index];
+
+      // Swap next vals
+      let next = page.n;
+      page.n = to_swap.n;
+      to_swap.n = next;
+      // Swap positions
+      let temp = to_swap;
+      adventure.p[target_index] = page;
+      adventure.p[index] = temp;
+
+      // Swap the keys too
+      let temp_key = page_keys[target_index];
+      let p_key = page_keys[index];
+      page_keys[target_index] = p_key;
+      page_keys[index] = temp_key;
+    } else {
+      console.log("Couldn't swap pages!");
+    }
+  }
+
+  function push_page() {
+    // Add a target to the previous page
+    if (adventure.p[adventure.p.length - 1].n.length == 0) {
+      adventure.p[adventure.p.length - 1].n = [adventure.p.length + 1];
+    }
+    adventure.p.push({ d: 0, c: "", b: "", n: [] as number[] });
+    // Add a new unique key
+    page_keys.push(crypto.randomUUID());
+  }
+
+  function delete_page(index: number) {
+    adventure.p.splice(index, 1) as [PageData];
+    page_keys.splice(index, 1) as [string];
+
+    // deleting a page reduces the length of the adventure
+    // after the deleted index, subtract from all page [n] values unless they're less than the index
+    adventure.p.slice(index).forEach((page, i) => {
+      if (page.n[0] > index) {
+        page.n[0] -= 1;
+      }
+    });
+  }
+
+  // stupid MSPFA format doesn't maintain consistent page IDs. AAAA
+  // So I generate a new list of keys
+  // By the way yeah I have to generate new keys when creating pages too. see push_page()
+  let page_keys = $state(adventure.p.map((page) => crypto.randomUUID()));
+
+  let pages_reversed = $derived(adventure.p.toReversed());
   let show_info = $state(false);
 </script>
 
@@ -59,23 +125,29 @@
   />
   <div class={`pages ${show_info ? "hidden" : ""}`}>
     <div class="add-page">
-      <button
-        class="add-page-btn"
-        onclick={() => adventure.p.push({ d: 0, c: "", b: "", n: [] })}
-        >Add Page</button
-      >
+      <button class="add-page-btn" onclick={() => push_page()}>Add Page</button>
     </div>
-    {#each pages_reversed as page, index}
-      <PageEditor
-        index={pages_reversed.length - index - 1}
-        bind:page={pages_reversed[index]}
-        bind:page_to_preview
-        delete_callback={(e) => {
-          let idx = pages_reversed.length - index - 1;
-          console.log(idx);
-          adventure.p.splice(idx, 1) as [PageData];
-        }}
-      ></PageEditor>
+    {#each pages_reversed as page, index (page_keys[pages_reversed.length - index - 1])}
+      {@const idx = pages_reversed.length - index - 1}
+      <div
+        class="page-editor-container"
+        animate:flip={{ duration: 100, easing: backOut }}
+      >
+        <PageEditor
+          index={idx}
+          bind:page={adventure.p[idx]}
+          bind:page_to_preview
+          delete_cb={() => {
+            delete_page(idx);
+          }}
+          move_up_cb={() => {
+            swap_page(idx, idx + 1);
+          }}
+          move_down_cb={() => {
+            swap_page(idx, idx - 1);
+          }}
+        ></PageEditor>
+      </div>
     {/each}
   </div>
 
@@ -97,6 +169,7 @@
     position: relative;
     max-width: 100vw;
     min-width: 292px;
+    overflow-anchor: none;
   }
 
   .pages {
@@ -120,6 +193,7 @@
     overflow: clip;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
+    z-index: 9000;
 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.849);
 
@@ -181,19 +255,19 @@
 
   .add-page-btn {
     background: white;
-    color: black;
+    color: rgb(120, 120, 120);
     padding: 0.2em 0.7em !important;
-    border: 2px solid gray;
+    border: 2px solid rgb(194, 194, 194);
     font-size: larger;
     border-radius: 0.5em;
     font-family: Verdana, sans-serif !important;
-    font-weight: normal !important;
+    font-weight: bold !important;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.303);
   }
 
   .add-page-btn:hover {
-    background: rgb(229, 229, 229);
-    border: 2px solid gray;
+    background: rgb(241, 241, 241);
+    border: 2px solid rgb(20, 172, 60);
     color: black;
   }
 
@@ -204,7 +278,8 @@
 
   @media (max-width: 650px) {
     .editor-pane {
-      height: 50vh;
+      min-height: 50vh;
+      height: 50%;
       width: 100vw !important;
       margin: 0 auto;
       resize: none;

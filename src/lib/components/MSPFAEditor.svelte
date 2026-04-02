@@ -31,7 +31,7 @@
   @media (max-width: 650px) {
     .editor-main {
       flex-direction: column-reverse;
-      height: 100vh;
+      height: 100svh;
       width: 100vw;
     }
   }

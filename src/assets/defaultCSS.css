@@ -54,13 +54,14 @@
     content: ">";
   }
 
-#comic-content > span {
-  padding: 4em;
+#comic-content > div {
   max-width: 100%;
+  padding: 1em;
 }
-#comic-content > span > :is(img, iframe) {
+
+#comic-content > div > :is(img, iframe) {
+  margin-left: -1em;
   margin-bottom: 1em;
-  margin-left: -4em;
   width: 100vw;
   max-width: fit-content;
 }

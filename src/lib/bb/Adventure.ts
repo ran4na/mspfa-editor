@@ -9,7 +9,7 @@ export interface PageData {
     d: number,
     c: string,
     b: string,
-    n: [number]
+    n: number[]
 }
 
 /**

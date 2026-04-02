@@ -38,9 +38,10 @@
   let {
     content = $bindable(""),
     editor,
-  }: { content: string; editor: HTMLTextAreaElement } = $props();
+  }: { content: string; editor: HTMLTextAreaElement | undefined } = $props();
 
   function insert_tags(opening: string, closing: string) {
+    if (!editor) return;
     const start = editor.selectionStart;
     const end = editor.selectionEnd;
 
@@ -88,10 +89,7 @@
       background: linear-gradient(rgb(255, 255, 255), rgb(207, 207, 207));
       border: none;
       border-right: 2px solid rgb(156, 156, 156);
-      height: 24px;
-      img {
-        height: 100%;
-      }
+      height: fit-content;
     }
 
     .editor-bar-button:hover {
@@ -100,6 +98,10 @@
 
     .editor-bar-button:active {
       background: linear-gradient(rgb(147, 147, 147), rgb(67, 67, 67));
+    }
+
+    .editor-bar-button img {
+      image-rendering: optimizeSpeed;
     }
   }
 </style>

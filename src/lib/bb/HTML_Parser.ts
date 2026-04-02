@@ -81,7 +81,6 @@ export class HTML_Parser {
             return "";
         }
         let html_string = "";
-        console.log(bbcode_tree);
         for(const tag of bbcode_tree.children) {
 
             // tag

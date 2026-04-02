@@ -81,12 +81,12 @@ export function parse_tokens(tokens: string[], root_tag: string = "root", index:
 }
 
 export function build_bbcode_tree(text: string) {
-    const tokens = text.match(/(\[[\/]?[^\[\]]+\]|\n|[^\[\]\n]+)/gm)
-    console.log(tokens);
-    if(tokens) {
-        const tree = parse_tokens(tokens, "root", 0).tree;
-        console.log(JSON.stringify(tree))
-        return tree;
+    if(text) {
+        const tokens = text.match(/(\[[\/]?[^\[\]]+\]|\n|[^\[\]\n]+)/gm);
+        if(tokens) {
+            const tree = parse_tokens(tokens, "root", 0).tree;
+            return tree;
+        }
     }
     return undefined;
     
