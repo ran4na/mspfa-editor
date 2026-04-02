@@ -3,7 +3,7 @@
   import { bb_tree, build_bbcode_tree } from "../bb/BBparser";
   import { HTML_Parser } from "../bb/HTML_Parser";
   import default_styles from "../../assets/defaultCSS.css?inline";
-  import { getEditorContext } from "../ComicContext";
+  import { getEditorContext } from "../EditorContext";
 
   let ctx = getEditorContext();
 

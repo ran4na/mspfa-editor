@@ -6,7 +6,7 @@
   import UpIcon from "../../assets/resources/icons/up.png";
   import DownIcon from "../../assets/resources/icons/down.png";
   import XIcon from "../../assets/resources/icons/X.png";
-  import { getEditorContext } from "../ComicContext";
+  import { getEditorContext } from "../EditorContext";
 
   let {
     index,

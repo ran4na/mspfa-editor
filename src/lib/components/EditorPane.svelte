@@ -7,7 +7,7 @@
   import { fade, slide } from "svelte/transition";
   import { backIn, backInOut, backOut, bounceInOut } from "svelte/easing";
   import EditorNav from "./EditorNav.svelte";
-  import { getEditorContext } from "../ComicContext";
+  import { getEditorContext } from "../EditorContext";
 
   let ctx = getEditorContext();
 

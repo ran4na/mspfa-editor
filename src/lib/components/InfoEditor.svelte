@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { ComicData } from "../bb/Adventure";
-  import { getEditorContext } from "../ComicContext";
+  import { getEditorContext } from "../EditorContext";
   let ctx = getEditorContext();
 </script>
 

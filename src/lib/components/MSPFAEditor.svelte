@@ -3,7 +3,7 @@
   import PreviewPane from "./PreviewPane.svelte";
 
   import { default_adventure } from "../bb/Adventure";
-  import { setEditorContext } from "../ComicContext";
+  import { setEditorContext } from "../EditorContext";
   import { onMount } from "svelte";
 
   let current_page: number = $state(0);
