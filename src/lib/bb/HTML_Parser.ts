@@ -33,7 +33,7 @@ export class ParamHandler {
     }
 
     // Converts an attribute to the output
-    parse(attribute_value: string) {
+    parse(attribute_value: string | undefined) {
         if(attribute_value == undefined) {
             // Return fallback
             return this.fallback;
@@ -61,7 +61,7 @@ export class TagMapping {
             // get parameter of name's value
             // will return undefined if the param isn't defined...
             let param_value = bbcode_tag.parameters.find(o => o.name == handler.name)?.value;
-            output_string = output_string.replaceAll(`$${handler.name}$`, handler.parse(param_value ?? ""))
+            output_string = output_string.replaceAll(`$${handler.name}$`, handler.parse(param_value))
         }
         // output string has all values except $children$ replaced
         return output_string;
@@ -190,6 +190,16 @@ export function HTML_default_mappings() {
                 )
             ]
     ))
+    mappings.set("background", new TagMapping(
+        "background",
+            `<span $background$>$children$</span>`,
+            [
+                new ParamHandler("background",
+                    `style="background-color: $val$"`,
+                    ``
+                )
+            ]
+    ))
     mappings.set("center", new TagMapping(
         "center",
             `<div style="text-align: center">$children$</div>`,
@@ -210,12 +220,19 @@ export function HTML_default_mappings() {
 
     mappings.set("spoiler", new TagMapping(
         "spoiler",
-            `<div class="spoiler">
-                <button class="spoiler-button" open="$open$" close="$close$">$open$</button>
-                <div class="spoiler-content">
-                    $children$
-                </div>
-            </div>`,
+            `<div class='spoiler' open-text='$open$' close-text='$close$' state='shown'
+              >
+                  <button class='spoiler-button' onclick='
+                    const parent = this.parentNode;  
+                    const open_text = parent.getAttribute("open-text");
+                    const close_text = parent.getAttribute("close-text");
+                    const state = parent.getAttribute("state");
+                    
+                    this.innerText = (state == "hidden") ? close_text : open_text;
+                    parent.setAttribute("state", (state == "hidden") ? "shown" : "hidden");
+                  '>$close$</button>
+                  <div class='spoiler-content hidden'>$children$</div>
+              </div>`,
             [
                 new ParamHandler("open", "$val$", "Show"),
                 new ParamHandler("close", "$val$", "Hide"),

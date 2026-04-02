@@ -2,19 +2,24 @@
   import EditorPane from "./EditorPane.svelte";
   import PreviewPane from "./PreviewPane.svelte";
 
-  import { default_adventure, type ComicData } from "../bb/Adventure";
+  import { default_adventure } from "../bb/Adventure";
+  import { setEditorContext } from "../ComicContext";
+  import { onMount } from "svelte";
 
-  let current_adventure: ComicData = $state(default_adventure);
   let current_page: number = $state(0);
+  // Set default context on mount
+  onMount(() => {});
+
+  let editorContext = $state({
+    adventure: default_adventure,
+    current_page_index: 0,
+  });
+  setEditorContext(editorContext);
 </script>
 
 <div class="editor-main">
-  <EditorPane
-    bind:adventure={current_adventure}
-    bind:page_to_preview={current_page}
-  ></EditorPane>
-  <PreviewPane adventure={current_adventure} page_index={current_page}
-  ></PreviewPane>
+  <EditorPane></EditorPane>
+  <PreviewPane></PreviewPane>
 </div>
 
 <style>

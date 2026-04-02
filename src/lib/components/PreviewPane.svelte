@@ -1,14 +1,10 @@
 <script lang="ts">
-  import type { ComicData } from "../bb/Adventure";
   import PagePreviewer from "./PagePreviewer.svelte";
-
-  let { adventure, page_index }: { adventure: ComicData; page_index: number } =
-    $props();
 </script>
 
 <div class="preview-pane">
   <div>
-    <PagePreviewer {page_index} adventure_data={adventure}></PagePreviewer>
+    <PagePreviewer></PagePreviewer>
   </div>
 </div>
 

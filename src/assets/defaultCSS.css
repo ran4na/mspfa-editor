@@ -62,8 +62,8 @@
 #comic-content > div > :is(img, iframe) {
   margin-left: -1em;
   margin-bottom: 1em;
-  width: 100vw;
-  max-width: fit-content;
+  
+  max-width: calc(100% + 2em);
 }
 .spoiler {
   border: 1px dashed gray;
@@ -87,6 +87,13 @@
 .spoiler img {
   max-width: 100%;
 }
+
+.spoiler[state="hidden"] {
+  .spoiler-content {
+    display: none;
+  }
+}
+
 #comic-content .imgpop {
   text-align: center;
   width: 950px;

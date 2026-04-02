@@ -1,4 +1,15 @@
 <script lang="ts">
+  import { onMount } from "svelte";
+  import { insert_tags } from "../bb/Editor_Utils";
+  import ImageButton from "./Buttons/ImageButton.svelte";
+  import SpoilerButton from "./Buttons/SpoilerButton.svelte";
+  import EditorModal from "./EditorModal.svelte";
+  import ToolButton from "./ToolButton.svelte";
+  import FgColorButton from "./Buttons/FgColorButton.svelte";
+  import BgColorButton from "./Buttons/BgColorButton.svelte";
+  import LinkButton from "./Buttons/LinkButton.svelte";
+  import GlowButton from "./Buttons/GlowButton.svelte";
+
   interface editorButton {
     n: string;
     o: string;
@@ -6,13 +17,7 @@
     i: string;
   }
 
-  const images = import.meta.glob("../../assets/resources/icons/*.PNG", {
-    eager: true,
-    query: "?url",
-    import: "default",
-  });
-
-  const basic_buttons = [
+  const basic_buttons: editorButton[] = [
     { n: "b", o: "[b]", c: "[/b]", i: "bold.PNG" },
     { n: "i", o: "[i]", c: "[/i]", i: "italic.PNG" },
     { n: "u", o: "[u]", c: "[/u]", i: "underline.PNG" },
@@ -21,58 +26,50 @@
       n: "nsp",
       o: `<div class="spoiler"><div class="spoiler-content">`,
       c: `</div></div>`,
-      i: "spoiler.PNG",
+      i: "nospoiler.PNG",
     },
-    { n: "left", o: "[left]", c: "[/left]", i: "left.PNG" },
-    { n: "center", o: "[center]", c: "[/center]", i: "center.PNG" },
-    { n: "right", o: "[right]", c: "[/right]", i: "right.PNG" },
-    { n: "ol", o: "[ol][li]", c: "[/li][/ol]", i: "numbers.PNG" },
-    { n: "ul", o: "[ul][li]", c: "[/li][/ul]", i: "bullet.PNG" },
-    { n: "h1", o: "<h1>", c: "</h1>", i: "h1.PNG" },
-    { n: "h2", o: "<h2>", c: "</h2>", i: "h2.PNG" },
-    { n: "h3", o: "<h3>", c: "</h3>", i: "h3.PNG" },
-    { n: "marquee", o: "<marquee>", c: "</marquee>", i: "marquee.PNG" },
-    { n: "blink", o: "<blink>", c: "</blink>", i: "blink.PNG" },
+    { n: "Align Left", o: "[left]", c: "[/left]", i: "left.PNG" },
+    { n: "Align Center", o: "[center]", c: "[/center]", i: "center.PNG" },
+    { n: "Align Right", o: "[right]", c: "[/right]", i: "right.PNG" },
+    { n: "Ordered List", o: "[ol][li]", c: "[/li][/ol]", i: "numbers.PNG" },
+    { n: "Unordered List", o: "[ul][li]", c: "[/li][/ul]", i: "bullet.PNG" },
+    { n: "Header 1", o: "<h1>", c: "</h1>", i: "h1.PNG" },
+    { n: "Header 2", o: "<h2>", c: "</h2>", i: "h2.PNG" },
+    { n: "Header 3", o: "<h3>", c: "</h3>", i: "h3.PNG" },
+    { n: "Marquee", o: "<marquee>", c: "</marquee>", i: "marquee.PNG" },
+    { n: "Blink", o: "<blink>", c: "</blink>", i: "blink.PNG" },
   ];
 
   let {
     content = $bindable(""),
     editor,
-  }: { content: string; editor: HTMLTextAreaElement | undefined } = $props();
+    show_buttons = true,
+  }: {
+    content: string;
+    editor: HTMLTextAreaElement | undefined;
+    show_buttons: boolean;
+  } = $props();
 
-  function insert_tags(opening: string, closing: string) {
-    if (!editor) return;
-    const start = editor.selectionStart;
-    const end = editor.selectionEnd;
-
-    // insert start tag
-    let v = editor.value;
-
-    v =
-      v.slice(0, start) +
-      opening +
-      v.slice(start, end) +
-      closing +
-      v.slice(end);
-
-    editor.value = v;
-    editor.selectionStart += opening.length + (start - end);
-    editor.dispatchEvent(new Event("input"));
-  }
+  let dialog_active = $state(false);
 </script>
 
 <div class="editor-bar">
-  {#each basic_buttons as button}
-    <button
-      class="editor-bar-button"
-      onclick={() => insert_tags(button.o, button.c)}
-    >
-      <img
-        src={images[`../../assets/resources/icons/${button.i}`] as string}
-        alt={button.n}
-      />
-    </button>
-  {/each}
+  {#if show_buttons || dialog_active}
+    {#each basic_buttons as button}
+      <ToolButton
+        name={button.n}
+        icon_file={button.i}
+        callback={() => insert_tags(editor, button.o, button.c)}
+      ></ToolButton>
+    {/each}
+    <!-- Special buttons! -->
+    <ImageButton {editor} bind:dialog_active></ImageButton>
+    <SpoilerButton {editor} bind:dialog_active></SpoilerButton>
+    <FgColorButton {editor} bind:dialog_active></FgColorButton>
+    <BgColorButton {editor} bind:dialog_active></BgColorButton>
+    <LinkButton {editor} bind:dialog_active></LinkButton>
+    <GlowButton {editor} bind:dialog_active></GlowButton>
+  {/if}
 </div>
 
 <style>
@@ -85,23 +82,31 @@
     flex-wrap: wrap;
     justify-content: left;
     background: linear-gradient(rgb(112, 111, 111), rgb(197, 197, 197));
-    .editor-bar-button {
-      background: linear-gradient(rgb(255, 255, 255), rgb(207, 207, 207));
-      border: none;
-      border-right: 2px solid rgb(156, 156, 156);
-      height: fit-content;
-    }
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+    overflow: hidden;
+  }
 
-    .editor-bar-button:hover {
-      background: linear-gradient(rgb(155, 155, 155), rgb(202, 202, 202));
-    }
+  .editor-bar:empty {
+    height: 26px;
+  }
 
-    .editor-bar-button:active {
-      background: linear-gradient(rgb(147, 147, 147), rgb(67, 67, 67));
-    }
+  :global(blink) {
+    animation: blink 1s step-end infinite;
+  }
 
-    .editor-bar-button img {
-      image-rendering: optimizeSpeed;
+  @keyframes blink {
+    0% {
+      opacity: 0%;
+    }
+    50% {
+      opacity: 100%;
+    }
+    100% {
+      opacity: 100%;
     }
   }
 </style>

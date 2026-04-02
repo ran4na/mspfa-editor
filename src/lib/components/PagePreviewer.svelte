@@ -1,19 +1,14 @@
 <script lang="ts">
-  import type { ComicData, PageData } from "../bb/Adventure";
-  import { bb_tree, bb_param, build_bbcode_tree } from "../bb/BBparser";
+  import type { PageData } from "../bb/Adventure";
+  import { bb_tree, build_bbcode_tree } from "../bb/BBparser";
   import { HTML_Parser } from "../bb/HTML_Parser";
-  import { default_adventure } from "../bb/Adventure";
   import default_styles from "../../assets/defaultCSS.css?inline";
-  const {
-    page_index = 0,
-    adventure_data = default_adventure,
-  }: { page_index: number; adventure_data: ComicData } = $props();
+  import { getEditorContext } from "../ComicContext";
 
-  let page_data: PageData = $derived(adventure_data.p[page_index]);
-  let next_page_data: PageData | undefined = $derived(
-    page_data ? adventure_data.p[page_data.n[0] - 1] : undefined,
-  );
-  let adventure_css: string = $derived(adventure_data.y);
+  let ctx = getEditorContext();
+
+  let page_data: PageData = $derived(ctx.adventure.p[ctx.current_page_index]);
+  let adventure_css: string = $derived(ctx.adventure.y);
   // parsed page content
   let page_bb_tree: bb_tree | undefined = $derived(
     page_data ? build_bbcode_tree(page_data.b) : undefined,
@@ -47,12 +42,17 @@
           </div>
         </div>
         <div id="comic-next">
-          {#if next_page_data}
-            <span class="next-link"
-              ><a href="#top" onclick={(e) => e.preventDefault()}
-                >{next_page_data.c}</a
-              ></span
-            >
+          {#if page_data}
+            {#each page_data.n as next, index (index)}
+              {@const next_page_data = ctx.adventure.p[next - 1]}
+              {#if next_page_data != undefined}
+                <div class="next-link">
+                  <a href="#top" onclick={(e) => e.preventDefault()}>
+                    {next_page_data.c}
+                  </a>
+                </div>
+              {/if}
+            {/each}
           {/if}
         </div>
       </div>
@@ -74,5 +74,9 @@
     .page-preview {
       height: fit-content;
     }
+  }
+
+  .next-link {
+    display: block;
   }
 </style>
