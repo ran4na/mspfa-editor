@@ -1,9 +1,7 @@
 <script lang="ts">
-  import { onMount } from "svelte";
   import { insert_tags } from "../bb/Editor_Utils";
   import ImageButton from "./Buttons/ImageButton.svelte";
   import SpoilerButton from "./Buttons/SpoilerButton.svelte";
-  import EditorModal from "./EditorModal.svelte";
   import ToolButton from "./ToolButton.svelte";
   import FgColorButton from "./Buttons/FgColorButton.svelte";
   import BgColorButton from "./Buttons/BgColorButton.svelte";

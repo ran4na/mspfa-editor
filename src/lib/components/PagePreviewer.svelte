@@ -4,7 +4,6 @@
   import { HTML_Parser } from "../bb/HTML_Parser";
   import default_styles from "../../assets/defaultCSS.css?inline";
   import { getEditorContext } from "../EditorContext";
-  import app from "../../main";
 
   let ctx = getEditorContext();
 
@@ -40,8 +39,6 @@
   }
 
   function getApplicablePageRanges(index: number, ranges: pageRange[]) {
-    console.log(index + 1);
-    console.log(ranges);
     let applicable_ranges = ranges.filter((range) => {
       return index + 1 >= range.start && index + 1 <= range.end;
     });

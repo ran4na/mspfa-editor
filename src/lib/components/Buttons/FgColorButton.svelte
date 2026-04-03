@@ -3,7 +3,6 @@
   import { insert_tags } from "../../bb/Editor_Utils";
   import EditorModal from "../EditorModal.svelte";
   import ToolButton from "../ToolButton.svelte";
-  import { get } from "svelte/store";
 
   let {
     editor,
