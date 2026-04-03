@@ -222,15 +222,15 @@ export function HTML_default_mappings() {
         "spoiler",
             `<div class='spoiler' open-text='$open$' close-text='$close$' state='shown'
               >
-                  <button class='spoiler-button' onclick='
+                  <input type='button' value='$close$' class='spoiler-button' onclick='
                     const parent = this.parentNode;  
                     const open_text = parent.getAttribute("open-text");
                     const close_text = parent.getAttribute("close-text");
                     const state = parent.getAttribute("state");
                     
-                    this.innerText = (state == "hidden") ? close_text : open_text;
+                    this.value = (state == "hidden") ? close_text : open_text;
                     parent.setAttribute("state", (state == "hidden") ? "shown" : "hidden");
-                  '>$close$</button>
+                  '/>
                   <div class='spoiler-content hidden'>$children$</div>
               </div>`,
             [

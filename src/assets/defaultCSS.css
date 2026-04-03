@@ -78,6 +78,7 @@
   padding: 2em;
   padding-top: 1em;
   padding-bottom: 1em;
+  overflow-wrap: break-word;
 }
 
 .spoiler-content:first-child:is(br),

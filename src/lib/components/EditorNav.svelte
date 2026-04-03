@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { ComicData } from "../bb/Adventure";
+  import { empty_adventure, type ComicData } from "../bb/Adventure";
   import { getEditorContext } from "../EditorContext";
 
   let { show_info = $bindable(false) } = $props();
@@ -21,12 +21,24 @@
     document.body.removeChild(a);
   }
 
+  async function new_adventure() {
+    let poop = confirm("Create a new adventure?");
+
+    if (!poop) return;
+
+    ctx.adventure = structuredClone(empty_adventure);
+    ctx.page_keys = ctx.adventure.p.map(() => crypto.randomUUID());
+    ctx.current_page_index = 0;
+  }
+
   let file_input: HTMLInputElement;
 
   async function load_adventure() {
     if (file_input.files) {
       let j = JSON.parse(await file_input.files[0].text());
       ctx.adventure = j as ComicData;
+      ctx.page_keys = ctx.adventure.p.map(() => crypto.randomUUID());
+      ctx.current_page_index = ctx.adventure.p.length - 1;
     }
   }
 </script>
@@ -42,6 +54,7 @@
   >
   <button class="nav-btn" onclick={() => save_adventure()}>Export</button>
   <label for="import" class="nav-btn import-btn">Import</label>
+  <button class="nav-btn" onclick={() => new_adventure()}>New</button>
 </div>
 <input
   type="file"

@@ -26,7 +26,7 @@
 
   let content_editor: HTMLTextAreaElement | undefined = $state(undefined);
 
-  let show_buttons = $state(false);
+  let show_buttons = $derived(ctx.current_page_index == index);
 
   function parse_next_pages(e: Event) {
     let i = e.currentTarget as HTMLInputElement;
@@ -44,9 +44,7 @@
   class="page-editor"
   onmouseenter={() => {
     ctx.current_page_index = index;
-    show_buttons = true;
   }}
-  onmouseleave={() => (show_buttons = false)}
   role="group"
 >
   <div class="top">

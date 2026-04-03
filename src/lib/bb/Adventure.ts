@@ -40,11 +40,11 @@ export interface ComicData {
     d: number,
     u: number,
     c: string,
-    e: [string],
+    e: string[],
     n: string,
     r: string,
     h: number,
-    t: [string],
+    t: string[],
     a: string,
     w: string,
     o: string,
@@ -59,4 +59,34 @@ export interface ComicData {
 }
 
 import json from "../../assets/defaultAdventure.json";
-export const default_adventure: ComicData = json as ComicData;
+export const default_adventure: ComicData = json as unknown as ComicData;
+
+export const empty_adventure: ComicData = {
+    i: 0,
+    d: Date.now(),
+    u: 0,
+    c: "",
+    e: [""],
+    n: "Adventure name",
+    r: "Adventure description",
+    h: 0,
+    t: [""],
+    a: "",
+    w: "",
+    o: "",
+    q: "",
+    x: "",
+    b: 0,
+    y: "",
+    j: "",
+    v: "",
+    m: "",
+    p: [
+        {
+            d: Date.now(),
+            c: "New page",
+            b: `Edit me!`,
+            n: []
+        }
+    ]
+};

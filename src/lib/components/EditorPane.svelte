@@ -1,14 +1,12 @@
 <script lang="ts">
-  import type { MouseEventHandler } from "svelte/elements";
-  import type { ComicData, PageData } from "../bb/Adventure";
+  import type { PageData } from "../bb/Adventure";
   import InfoEditor from "./InfoEditor.svelte";
   import PageEditor from "./PageEditor.svelte";
   import { flip } from "svelte/animate";
-  import { fade, slide } from "svelte/transition";
-  import { backIn, backInOut, backOut, bounceInOut } from "svelte/easing";
+  import { backOut } from "svelte/easing";
   import EditorNav from "./EditorNav.svelte";
   import { getEditorContext } from "../EditorContext";
-
+  import { untrack } from "svelte";
   let ctx = getEditorContext();
 
   // Swap pages in place... updates their next values too
@@ -33,10 +31,10 @@
       ctx.adventure.p[index] = temp;
 
       // Swap the keys too
-      let temp_key = page_keys[target_index];
-      let p_key = page_keys[index];
-      page_keys[target_index] = p_key;
-      page_keys[index] = temp_key;
+      let temp_key = ctx.page_keys[target_index];
+      let p_key = ctx.page_keys[index];
+      ctx.page_keys[target_index] = p_key;
+      ctx.page_keys[index] = temp_key;
     } else {
       console.log("Couldn't swap pages!");
     }
@@ -51,12 +49,12 @@
     }
     ctx.adventure.p.push({ d: 0, c: "", b: "", n: [] as number[] });
     // Add a new unique key
-    page_keys.push(crypto.randomUUID());
+    ctx.page_keys.push(crypto.randomUUID());
   }
 
   function delete_page(index: number) {
     ctx.adventure.p.splice(index, 1) as [PageData];
-    page_keys.splice(index, 1) as [string];
+    ctx.page_keys.splice(index, 1) as [string];
 
     // deleting a page reduces the length of the adventure
     // after the deleted index, subtract from all page [n] values unless they're less than the index
@@ -68,8 +66,8 @@
       });
     });
   }
+
   // By the way yeah I have to generate new keys when creating pages too. see push_page()
-  let page_keys = $state(ctx.adventure.p.map((page) => crypto.randomUUID()));
 
   let pages_reversed = $derived(ctx.adventure.p.toReversed());
   let show_info = $state(false);
@@ -85,7 +83,7 @@
             >Add Page</button
           >
         </div>
-        {#each pages_reversed as page, index (page_keys[pages_reversed.length - index - 1])}
+        {#each pages_reversed as page, index (ctx.page_keys[pages_reversed.length - index - 1])}
           {@const idx = pages_reversed.length - index - 1}
           <div
             class="page-editor-container"
@@ -128,7 +126,7 @@
     color: black;
     position: relative;
     max-width: 100vw;
-    min-width: 292px;
+    min-width: 341px;
     overflow-anchor: none;
   }
 

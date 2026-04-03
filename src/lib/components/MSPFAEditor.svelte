@@ -11,8 +11,9 @@
   onMount(() => {});
 
   let editorContext = $state({
-    adventure: default_adventure,
+    adventure: structuredClone(default_adventure),
     current_page_index: 0,
+    page_keys: default_adventure.p.map(() => crypto.randomUUID()),
   });
   setEditorContext(editorContext);
 </script>

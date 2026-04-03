@@ -70,6 +70,11 @@
     color: black !important;
     border-color: gray !important;
     border-width: 2px !important;
+    border-style: solid;
+  }
+
+  :global(.editor-modal hr) {
+    border-style: solid;
   }
 
   :global(.editor-modal button:hover) {
