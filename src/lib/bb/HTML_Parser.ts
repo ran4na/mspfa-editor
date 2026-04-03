@@ -167,7 +167,37 @@ export function HTML_default_mappings() {
             `<u>$children$</u>`,
             []
     ))
+    mappings.set("font", new TagMapping(
+        "font",
+            `<span style="font-family: '$font$';">$children$</span>`,
+            [
+                new ParamHandler("font", "$val$", "inherit")
+            ]
+    ))
 
+    mappings.set("user", new TagMapping(
+        "user",
+            `<a class="usertag" href="https://mspfa.com/user/?u=$children$" data-userid="$children$">@$children$</a>`,
+            []
+    ))
+
+    mappings.set("alt", new TagMapping(
+        "alt",
+            `<span title='$alt$'>$children$</span>`,
+            [
+                new ParamHandler("alt", "$val$", "")
+            ]
+    ))
+
+    mappings.set("flash", new TagMapping(
+        "flash",
+            `<object type="application/x-shockwave-flash" data='$flash$' $width$ $height$>$children$</object>`,
+            [
+                new ParamHandler("flash", "$val$", ""),
+                new ParamHandler("width", "width='$val$'", ""),
+                new ParamHandler("height", "height='$val$'", ""),
+            ]
+    ))
 
     mappings.set("size", new TagMapping(
         "size",

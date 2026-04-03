@@ -165,14 +165,15 @@
   }
 
   #editor-text {
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Source Code Pro", monospace;
+    font-size: 0.8rem;
     min-width: 100%;
     max-width: 100%;
     width: 100%;
     box-sizing: border-box;
     min-height: 20em;
     resize: vertical;
-    font-weight: bold;
+    font-weight: normal;
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
   }

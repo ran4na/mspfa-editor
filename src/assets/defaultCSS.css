@@ -59,10 +59,10 @@
   padding: 1em;
 }
 
-#comic-content > div > :is(img, iframe) {
+#comic-content > div > :is(img, iframe), #comic-content > div > span:has(img, iframe) {
   margin-left: -1em;
   margin-bottom: 1em;
-  
+  display: block;
   max-width: calc(100% + 2em);
 }
 .spoiler {

@@ -9,6 +9,11 @@
   import BgColorButton from "./Buttons/BgColorButton.svelte";
   import LinkButton from "./Buttons/LinkButton.svelte";
   import GlowButton from "./Buttons/GlowButton.svelte";
+  import AltButton from "./Buttons/AltButton.svelte";
+  import FlashButton from "./Buttons/FlashButton.svelte";
+  import UserButton from "./Buttons/UserButton.svelte";
+  import FontButton from "./Buttons/FontButton.svelte";
+  import SizeButton from "./Buttons/SizeButton.svelte";
 
   interface editorButton {
     n: string;
@@ -69,6 +74,11 @@
     <BgColorButton {editor} bind:dialog_active></BgColorButton>
     <LinkButton {editor} bind:dialog_active></LinkButton>
     <GlowButton {editor} bind:dialog_active></GlowButton>
+    <AltButton {editor} bind:dialog_active></AltButton>
+    <FlashButton {editor} bind:dialog_active></FlashButton>
+    <UserButton {editor} bind:dialog_active></UserButton>
+    <FontButton {editor} bind:dialog_active></FontButton>
+    <SizeButton {editor} bind:dialog_active></SizeButton>
   {/if}
 </div>
 

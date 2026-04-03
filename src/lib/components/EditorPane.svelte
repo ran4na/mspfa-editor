@@ -42,10 +42,12 @@
 
   function push_page() {
     // Add a target to the previous page
-    if (ctx.adventure.p[ctx.adventure.p.length - 1].n.length == 0) {
-      ctx.adventure.p[ctx.adventure.p.length - 1].n = [
-        ctx.adventure.p.length + 1,
-      ];
+    if (ctx.adventure.p.length > 0) {
+      if (ctx.adventure.p[ctx.adventure.p.length - 1].n.length == 0) {
+        ctx.adventure.p[ctx.adventure.p.length - 1].n = [
+          ctx.adventure.p.length + 1,
+        ];
+      }
     }
     ctx.adventure.p.push({ d: 0, c: "", b: "", n: [] as number[] });
     // Add a new unique key
@@ -121,7 +123,7 @@
     flex-direction: column;
     overflow: auto;
     resize: horizontal;
-    width: 40%;
+    width: 50%;
     background: linear-gradient(rgb(228, 228, 228), rgb(141, 133, 133));
     color: black;
     position: relative;
