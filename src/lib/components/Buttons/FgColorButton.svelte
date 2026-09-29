@@ -4,6 +4,13 @@
   import EditorModal from "../EditorModal.svelte";
   import ToolButton from "../ToolButton.svelte";
 
+  /**
+   * TODO:
+   *  When saving a color in one button, it doesn't transfer to other buttons
+   *  Idea: Move to comic state and/or load when the editor is mounted
+   *        (Multiple buttons refer to this anyways so it'd be better and have less duplication)
+   */
+
   let {
     editor,
     dialog_active = $bindable(false),

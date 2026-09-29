@@ -1,6 +1,11 @@
 <script lang="ts">
   import { getEditorContext } from "../EditorContext";
   let ctx = getEditorContext();
+
+  /**
+   * TODO: Make a nicer UI for this
+   *       Add more edit fields?
+   */
 </script>
 
 <div class="info-editor">

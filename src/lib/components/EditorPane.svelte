@@ -177,6 +177,8 @@
       margin: 0 auto;
       resize: none;
       box-sizing: border-box;
+      border-right: none;
+      border-top: 3px solid black;
     }
   }
 </style>

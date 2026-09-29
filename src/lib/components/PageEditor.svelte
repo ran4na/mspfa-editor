@@ -8,6 +8,15 @@
   import XIcon from "../../assets/resources/icons/X.png";
   import { getEditorContext } from "../EditorContext";
 
+  /**
+   * TODO: Syntax highlighting? textarea doesn't support styling but I saw a guide online
+   *        https://css-tricks.com/creating-an-editable-textarea-that-supports-syntax-highlighted-code/
+   *        Which creates an invisible textarea and renders the result on top
+   *      I want to highlight [bbcode] tags, parameter names and values, and <html> tags
+   *
+   *  Also, if ctx.current_page is updated externally, i want to scroll this into view.
+   */
+
   let {
     index,
     page = $bindable(),

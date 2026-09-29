@@ -29,6 +29,7 @@
     getApplicablePageRanges(ctx.current_page_index, page_ranges),
   );
 
+  // Collect all page range classes from adventure CSS (pX-Y)
   function getPageRanges(css: string): pageRange[] {
     let ranges: pageRange[] = [];
     let tokens = css.matchAll(/.p([0-9]+)-([0-9]+)/gm);
@@ -38,12 +39,11 @@
     return ranges;
   }
 
+  // Collect all page ranges that the current page qualifies for
   function getApplicablePageRanges(index: number, ranges: pageRange[]) {
     let applicable_ranges = ranges.filter((range) => {
       return index + 1 >= range.start && index + 1 <= range.end;
     });
-
-    console.log(applicable_ranges);
 
     return applicable_ranges
       .map((range) => `p${range.start}-${range.end}`)

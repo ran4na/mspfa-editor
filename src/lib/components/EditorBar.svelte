@@ -21,12 +21,12 @@
   }
 
   const basic_buttons: editorButton[] = [
-    { n: "b", o: "[b]", c: "[/b]", i: "bold.PNG" },
-    { n: "i", o: "[i]", c: "[/i]", i: "italic.PNG" },
-    { n: "u", o: "[u]", c: "[/u]", i: "underline.PNG" },
-    { n: "s", o: "[s]", c: "[/s]", i: "strikethrough.PNG" },
+    { n: "Bold", o: "[b]", c: "[/b]", i: "bold.PNG" },
+    { n: "Italic", o: "[i]", c: "[/i]", i: "italic.PNG" },
+    { n: "Underline", o: "[u]", c: "[/u]", i: "underline.PNG" },
+    { n: "Strikethrough", o: "[s]", c: "[/s]", i: "strikethrough.PNG" },
     {
-      n: "nsp",
+      n: "Buttonless Spoiler",
       o: `<div class="spoiler"><div class="spoiler-content">`,
       c: `</div></div>`,
       i: "nospoiler.PNG",
