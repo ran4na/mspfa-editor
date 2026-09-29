@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { PageData } from "../bb/Adventure";
+  import { empty_adventure, type PageData } from "../bb/Adventure";
   import InfoEditor from "./InfoEditor.svelte";
   import PageEditor from "./PageEditor.svelte";
   import { flip } from "svelte/animate";
@@ -54,19 +54,55 @@
     ctx.page_keys.push(crypto.randomUUID());
   }
 
+  // Insert page after index (of previous page)
+  function insert_page(index: number) {
+    if(index > ctx.adventure.p.length) {
+      alert("Page index out of bounds!");
+      return;
+    }
+    
+    // If this is after a tail end page, with no set next page,
+    // set the index to the newly created page.
+    if (ctx.adventure.p.length > 0) {
+      if (ctx.adventure.p[index].n.length == 0) {
+        ctx.adventure.p[index].n = [
+          index + 2,
+        ];
+      }
+      // If there are pages after this, increment the next page count for those.
+      add_to_npages_after_index(index + 1, 1);
+    }
+    
+    let n: number[] = [];
+    // get next page, if this isn't the last
+    if(index < ctx.adventure.p.length - 1) {
+      n = [index + 3];
+    }
+
+    // Insert the page
+    ctx.adventure.p.splice(index + 1, 0, { d: 0, c: "", b: "", n: n });
+    ctx.page_keys.splice(index + 1, 0, crypto.randomUUID());
+  }
+
+
   function delete_page(index: number) {
     ctx.adventure.p.splice(index, 1) as [PageData];
     ctx.page_keys.splice(index, 1) as [string];
 
     // deleting a page reduces the length of the adventure
     // after the deleted index, subtract from all page [n] values unless they're less than the index
-    ctx.adventure.p.slice(index).forEach((page, i) => {
-      page.n.forEach((np, i) => {
-        if (np > index) {
-          page.n[i] -= 1;
+    add_to_npages_after_index(index, -1);
+  }
+
+  // Increment next-page indices by xcrement haha poo
+  function add_to_npages_after_index(index: number, xcrement: number) {
+    for(const [idx, page] of ctx.adventure.p.slice(index).entries()) {
+      for(const [i, next_page] of page.n.entries()) {
+        if (next_page > idx) {
+          page.n[i] += xcrement;
         }
-      });
-    });
+      }
+    }
   }
 
   // By the way yeah I have to generate new keys when creating pages too. see push_page()
@@ -103,6 +139,7 @@
               move_down_cb={() => {
                 swap_page(idx, idx - 1);
               }}
+              insert_cb={() => insert_page(idx)}
             ></PageEditor>
           </div>
         {/each}

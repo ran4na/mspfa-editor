@@ -6,6 +6,7 @@
   import UpIcon from "../../assets/resources/icons/up.png";
   import DownIcon from "../../assets/resources/icons/down.png";
   import XIcon from "../../assets/resources/icons/X.png";
+  import UpInsertIcon from "../../assets/resources/icons/upinsert.PNG"
   import { getEditorContext } from "../EditorContext";
 
   /**
@@ -23,12 +24,14 @@
     delete_cb = () => {},
     move_up_cb = () => {},
     move_down_cb = () => {},
+    insert_cb = () => {},
   }: {
     index: number;
     page: PageData;
     delete_cb: MouseEventHandler<HTMLElement>;
     move_up_cb: MouseEventHandler<HTMLElement>;
     move_down_cb: MouseEventHandler<HTMLElement>;
+    insert_cb: MouseEventHandler<HTMLElement>;
   } = $props();
 
   let ctx = getEditorContext();
@@ -105,6 +108,14 @@
         title="Move page down"
       >
         <img src={DownIcon} alt="Move Down" />
+      </button>
+      <button
+        class="move-btn"
+        onclick={insert_cb}
+        id="insert-btn"
+        title="Insert page after"
+      >
+        <img src={UpInsertIcon} alt="Insert above" />
       </button>
     </span>
     <span class="delete">
