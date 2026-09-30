@@ -12,6 +12,7 @@
   import UserButton from "./Buttons/UserButton.svelte";
   import FontButton from "./Buttons/FontButton.svelte";
   import SizeButton from "./Buttons/SizeButton.svelte";
+  import type { EditorView } from "codemirror";
 
   interface editorButton {
     n: string;
@@ -49,7 +50,7 @@
     show_buttons = true,
   }: {
     content: string;
-    editor: HTMLTextAreaElement | undefined;
+    editor: EditorView | undefined;
     show_buttons: boolean;
   } = $props();
 

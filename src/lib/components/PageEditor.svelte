@@ -8,6 +8,8 @@
   import XIcon from "../../assets/resources/icons/X.png";
   import UpInsertIcon from "../../assets/resources/icons/upinsert.PNG"
   import { getEditorContext } from "../EditorContext";
+  import NiceTextEditor from "./NiceTextEditor.svelte";
+  import type { EditorView } from "codemirror";
 
   /**
    * TODO: Syntax highlighting? textarea doesn't support styling but I saw a guide online
@@ -37,6 +39,7 @@
   let ctx = getEditorContext();
 
   let content_editor: HTMLTextAreaElement | undefined = $state(undefined);
+  let content_view: EditorView | undefined = $state.raw(undefined);
 
   let show_buttons = $derived(ctx.current_page_index == index);
 
@@ -82,14 +85,11 @@
     bind:value={page.c}
     title="Page title"
   />
-  <EditorBar bind:content={page.b} editor={content_editor} {show_buttons}
+  <EditorBar bind:content={page.b} editor={content_view} {show_buttons}
   ></EditorBar>
-  <textarea
-    id="editor-text"
-    placeholder="Page text"
-    bind:value={page.b}
-    bind:this={content_editor}
-  ></textarea>
+  <NiceTextEditor bind:text={page.b} bind:view={content_view}>
+
+  </NiceTextEditor>
 
   <div class="button-strip">
     <span class="move">
@@ -183,21 +183,6 @@
 
     border: 2px solid gray;
   }
-
-  #editor-text {
-    font-family: "Source Code Pro", monospace;
-    font-size: 0.8rem;
-    min-width: 100%;
-    max-width: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    min-height: 20em;
-    resize: vertical;
-    font-weight: normal;
-    border-bottom-left-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
-  }
-
   .top {
     border-bottom: 1px solid black;
     margin-bottom: 0.5em;

@@ -3,11 +3,12 @@
   import { insert_tags } from "../../bb/Editor_Utils";
   import EditorModal from "../EditorModal.svelte";
   import ToolButton from "../ToolButton.svelte";
+  import type { EditorView } from "codemirror";
 
   let {
     editor,
     dialog_active = $bindable(false),
-  }: { editor: HTMLTextAreaElement | undefined; dialog_active: boolean } =
+  }: { editor: EditorView | undefined; dialog_active: boolean } =
     $props();
 
   function insert_glow_tag(x: number, y: number, size: number, color: string) {
