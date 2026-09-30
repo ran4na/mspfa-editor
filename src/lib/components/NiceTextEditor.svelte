@@ -9,7 +9,7 @@
 
     let editor_element: HTMLDivElement | undefined = $state();
     const tagMatcher = new MatchDecorator({
-        regexp: /\[\/?[^\]\s]+\]/gm,
+        regexp: /\[\/?[^\]]+\]/gm,
         decoration: Decoration.mark({class: "cm-tag"})
     });
 
